@@ -23,6 +23,8 @@ public class LoginScreenFragment1 extends BaseFragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        showHeader();
+        setHeaderTitle("đăng nhập");
     }
 
 

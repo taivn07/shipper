@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 
 import jp.shipper.app.R;
 import jp.shipper.app.acitivty.BaseActivity;
+import jp.shipper.app.acitivty.MainActivity;
 
 public abstract class BaseFragment extends Fragment {
 
@@ -41,6 +42,14 @@ public abstract class BaseFragment extends Fragment {
 
 	public void showFragmentWithArgAddToBackStack(Fragment fragment, Bundle arg){
 		((BaseActivity)getActivity()).showFragmentWithArgAddToBackStack(fragment, arg);
+	}
+
+	public void showHeader(){
+		((MainActivity)getActivity()).showHeader();
+	}
+
+	public void setHeaderTitle(String title){
+		((MainActivity)getActivity()).setHeaderTitle(title);
 	}
 
 	public void showFragmentFooter(Fragment fragment){

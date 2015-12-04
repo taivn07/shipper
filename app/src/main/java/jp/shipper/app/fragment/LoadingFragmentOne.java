@@ -10,6 +10,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import jp.shipper.app.R;
+import jp.shipper.app.acitivty.MainActivity;
 
 /**
  * Created by QuyTrongNguyen on 03/12/2015.
@@ -47,14 +48,12 @@ public class LoadingFragmentOne extends BaseFragment {
             @Override
             public void onClick(View v) {
                 showFragmentAddToBackStack(new LoginFragment());
-                showHeader("đăng nhập");
             }
         });
         mTextViewPersonFindShip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 showFragmentAddToBackStack(new LoginFragment());
-                showHeader("đăng nhập");
             }
         });
 
@@ -62,7 +61,6 @@ public class LoadingFragmentOne extends BaseFragment {
             @Override
             public void onClick(View v) {
                 showFragmentAddToBackStack(new LoginFragment());
-                showHeader("đăng nhập");
             }
         });
         mLinearLayoutOne.post(new Runnable() {
@@ -94,6 +92,8 @@ public class LoadingFragmentOne extends BaseFragment {
             }
         });
 
+        showHeader();
+        setHeaderTitle("Home");
 
     }
 }
