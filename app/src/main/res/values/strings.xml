@@ -1,4 +1,21 @@
 <resources>
     <string name="app_name">Shipper</string>
     <string name="action_settings">Settings</string>
+    <string name="home"> Home </string>
+    <string name="ship_hang"> Ship Hàng </string>
+    <string name="ship_tim_nguoi_nguoi_tim_ship"> Ship tìm người - Người tìm ship </string>
+    <string name="ship_qua_vat"> Ship quà vặt </string>
+    <string name="the_gioi_qua_vat"> Thế giới quà vặt 24/7 </string>
+    <string name="ship_tim_nguoi"> Ship tìm người </string>
+    <string name="nguoi_tim_ship"> Người tìm ship </string>
+    <string name="dang_nhap_facebook"> Đăng nhập bằng tài khoản Facebook </string>
+    <string name="dang_nhap_shipper"> Đăng nhập bằng tài khoản Shipper </string>
+    <string name="hoac"> Hoặc </string>
+    <string name="ho_ten"> Nguyễn Trọng Quý </string>\
+    <string name="so_dien_thoai"> 1234567890 </string>
+    <string name="dang_nhap"> Đăng Nhập </string>
+    <string name="quen_mat_khau">Quên Mật Khẩu</string>
+    <string name="nhap_mat_khau"> Nhập Mật Khẩu </string>
+
+
 </resources>

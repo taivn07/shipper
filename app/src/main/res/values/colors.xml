@@ -3,7 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-
-
     <color name="header_bg">#fd6721</color>
+    <color name="background_loading_screen">#F4E3CF</color>
+    <color name="color_white"> #FFFFFF</color>
 </resources>
