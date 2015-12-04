@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public class Utils {
 
-    public boolean isOnline() {
+    public static boolean isOnline() {
         Runtime runtime = Runtime.getRuntime();
         try {
             Process ipProcess = runtime.exec("/system/bin/ping -c 1 8.8.8.8");
@@ -21,7 +21,7 @@ public class Utils {
         return false;
     }
 
-    public boolean isNetwork(Context context) {
+    public static boolean isNetwork(Context context) {
         ConnectivityManager cm =
                 (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
         return cm.getActiveNetworkInfo() != null &&
