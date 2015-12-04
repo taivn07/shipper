@@ -1,11 +1,13 @@
 package jp.shipper.app.fragment;
 
 import android.app.Fragment;
+import android.app.FragmentManager;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import jp.shipper.app.R;
 import jp.shipper.app.acitivty.BaseActivity;
 
 public abstract class BaseFragment extends Fragment {
@@ -38,6 +40,10 @@ public abstract class BaseFragment extends Fragment {
 	}
 
 	public void showFragmentWithArgAddToBackStack(Fragment fragment, Bundle arg){
-		((BaseActivity)getActivity()).showFragmentWithArgAddToBackStack(fragment,arg);
+		((BaseActivity)getActivity()).showFragmentWithArgAddToBackStack(fragment, arg);
+	}
+
+	public void showFragmentFooter(Fragment fragment){
+		((BaseActivity)getActivity()).showFragmentFooter(fragment);
 	}
 }

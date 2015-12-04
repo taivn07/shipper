@@ -5,6 +5,7 @@ import android.os.Bundle;
 import jp.shipper.app.R;
 
 public class LoginFragment extends BaseFragment {
+
     @Override
     int getLayout() {
         return R.layout.login_fragment;
