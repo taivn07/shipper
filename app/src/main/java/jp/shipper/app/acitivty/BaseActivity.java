@@ -42,10 +42,6 @@ public class BaseActivity extends Activity{
 				.commit();
 	}
 
-	public void showFragmentFooter(Fragment fragment){
-		FragmentManager fm = getFragmentManager();
-		fm.beginTransaction().replace(R.id.frame_footer, fragment)
-				.commit();
-	}
+
 
 }

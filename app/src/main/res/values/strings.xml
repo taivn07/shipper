@@ -17,8 +17,10 @@
     <string name="quen_mat_khau">Quên Mật Khẩu</string>
     <string name="nhap_mat_khau"> Nhập Mật Khẩu </string>
 
+    <!--Tabbar-->
     <string name="tab_create">Create</string>
     <string name="tab_history">History</string>
     <string name="tab_notification">Notification</string>
     <string name="tab_map">Map</string>
+
 </resources>

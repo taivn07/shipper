@@ -29,7 +29,7 @@ public class LoadingFragmentOne extends BaseFragment {
 
     RelativeLayout mRelativeLayout;
     @Override
-    int getLayout() {
+    protected int getLayout() {
         return R.layout.loading_fragment_one;
     }
 

@@ -17,7 +17,7 @@ public abstract class BaseFragment extends Fragment {
 
 	protected static String TAG;
 
-	abstract int getLayout();
+	protected abstract int getLayout();
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -48,11 +48,11 @@ public abstract class BaseFragment extends Fragment {
 		((MainActivity)getActivity()).showHeader();
 	}
 
-	public void setHeaderTitle(String title){
-		((MainActivity)getActivity()).setHeaderTitle(title);
+	public void hideHeader() {
+		((MainActivity)getActivity()).hideHeader();
 	}
 
-	public void showFragmentFooter(Fragment fragment){
-		((BaseActivity)getActivity()).showFragmentFooter(fragment);
+	public void setHeaderTitle(String title){
+		((MainActivity)getActivity()).setHeaderTitle(title);
 	}
 }

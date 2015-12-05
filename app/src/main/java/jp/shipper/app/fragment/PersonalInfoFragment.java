@@ -5,17 +5,20 @@ import android.view.View;
 
 import jp.shipper.app.R;
 
-public class HistoryShipFragment extends TabBaseFragment {
+/**
+ * Created by hoangnv on 12/5/15.
+ */
+public class PersonalInfoFragment extends NaviBaseFragment{
 
     @Override
     protected int getLayout() {
-        return R.layout.history_ship_fragment;
+        return R.layout.personal_info_fragment;
     }
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        setHeaderTitle(getString(R.string.tab_history));
+        setHeaderTitle("Personal Info");
     }
 }
