@@ -43,4 +43,10 @@
     <string name="profile_edit_screen_name">Tuyên</string>
     <string name="profile_edit_screen_phone_number"> 012345678 </string>
     <string name="profile_edit_screen_address"> Lê Hồng Phong - Ba Đình - Hà Nội </string>
+
+    <string name="register_screen_dang_ky"> Đăng Ký </string>
+    <string name="register_screen_xac_nhan_mat_khau"> Xác Nhận Mật Khẩu </string>
+    <string name="register_screen_mat_khau"> Mật Khẩu </string>
+    <string name="register_screen_so_dien_thoai"> Số Điện Thoại</string>
+    <string name="register_screen_dang_ky_su_dung"> Đăng Ký Sử Dụng</string>
 </resources>
