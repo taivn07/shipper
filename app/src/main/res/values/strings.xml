@@ -49,4 +49,13 @@
     <string name="register_screen_mat_khau"> Mật Khẩu </string>
     <string name="register_screen_so_dien_thoai"> Số Điện Thoại</string>
     <string name="register_screen_dang_ky_su_dung"> Đăng Ký Sử Dụng</string>
+
+    <string name="share_app_screen_text1">Mỗi Chia Sẻ thành công, bạn sẽ nhận được 10.000 VND của chương trình gửi đến tài khoản của bạn. Mỗi người bạn của bạn sử dụng mã chia sẻ, bạn nhận được 30. 000 VND. Cảm ơn bạn đã giúp chúng tôi chia sẻ ứng dụng này. ^^</string>
+    <string name="share_app_screen_share_facebook">Chia Sẻ Trên Facebook</string>
+    <string name="share_app_screen"> Thêm nội dung chia sẻ...</string>
+    <string name="share_app_screen_noidung">Ứng dụng này tuyệt lắm. ^^</string>
+    <string name="share_app_screen_mota"> Nhận ngay 30.000 khi cài đặt và sử dụng ứng dụng </string>
+    <string name="share_app_screen_makm"> Mã Khuyến Mại PICO </string>
+    <string name="share_app_screen_facebook"> http://facebook.com/homeship </string>
+    <string name="share_app_screen_chiase"> Chia Sẻ </string>
 </resources>

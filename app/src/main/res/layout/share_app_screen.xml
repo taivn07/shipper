@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/share_app_screen_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/share_app_screen_heigh_view"
+        android:background="@color/register_screen_background_textview" />\
+
+    <RelativeLayout
+        android:id="@+id/share_app_screen_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/share_app_screen_view"
+        android:background="@color/colorPrimary"
+        android:paddingBottom="20dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/share_app_screen_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/share_app_screen_share_facebook"
+            android:textColor="@color/color_white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/share_app_screen_textview"
+            android:gravity="center_horizontal"
+            android:text="@string/share_app_screen_text1"
+            android:textColor="@color/color_white" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/share_app_screen_tv_them_noi_dung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/share_app_screen_relativelayout"
+        android:layout_marginTop="15dp"
+        android:text="@string/share_app_screen"
+        android:textSize="@dimen/share_app_screen_textsize" />
+
+    <EditText
+        android:id="@+id/share_app_screen_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/share_app_screen_tv_them_noi_dung"
+        android:layout_marginTop="5dp"
+        android:hint="@string/share_app_screen_noidung"
+        android:singleLine="true"
+        android:textSize="@dimen/share_app_screen_textsize" />
+
+    <ImageView
+        android:id="@+id/share_app_screen_img2"
+        android:layout_width="@dimen/share_app_screen_width"
+        android:layout_height="@dimen/share_app_screen_heigh"
+        android:layout_below="@id/share_app_screen_edittext"
+        android:scaleType="fitXY"
+        android:src="@drawable/homeship" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/share_app_screen_edittext"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/share_app_screen_img2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="@string/share_app_screen_mota"
+            android:textSize="@dimen/share_app_screen_textsize_15" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="@string/share_app_screen_makm"
+            android:textSize="@dimen/share_app_screen_textsize_15" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="@string/share_app_screen_facebook"
+            android:textSize="@dimen/share_app_screen_textsize_15" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="@dimen/share_app_screen_width_button"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/share_app_screen_img2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_background"
+        android:text="@string/share_app_screen_chiase" />
+
+
+</RelativeLayout>
