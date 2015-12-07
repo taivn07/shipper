@@ -1,7 +1,9 @@
 package jp.shipper.app.utils;
 
+import android.app.Activity;
 import android.content.Context;
 import android.net.ConnectivityManager;
+import android.util.DisplayMetrics;
 
 import java.io.IOException;
 
@@ -26,5 +28,19 @@ public class Utils {
                 (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
         return cm.getActiveNetworkInfo() != null &&
                 cm.getActiveNetworkInfo().isConnectedOrConnecting();
+    }
+
+    private  static DisplayMetrics getDisplayMetrics(Activity activity){
+        DisplayMetrics displaymetrics = new DisplayMetrics();
+        activity.getWindowManager().getDefaultDisplay().getMetrics(displaymetrics);
+        return displaymetrics;
+    }
+
+    public static int getWidthScreen(Activity activity){
+        return getDisplayMetrics(activity).widthPixels;
+    }
+
+    public static int getHeightScreen(Activity activity){
+        return getDisplayMetrics(activity).heightPixels;
     }
 }

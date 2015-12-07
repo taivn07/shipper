@@ -13,7 +13,7 @@ import jp.shipper.app.R;
 public class ProfileEditScreen extends BaseFragment {
     Spinner spinnerDistrict, spinnerCity;
     @Override
-    int getLayout() {
+    public int getLayout() {
         return R.layout.profile_edit_screen;
     }
 

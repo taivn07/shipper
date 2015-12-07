@@ -18,4 +18,12 @@
         android:layout_above="@+id/frame_footer"
         android:layout_height="match_parent"></FrameLayout>
 
+    <FrameLayout
+        android:id="@+id/frame_footer"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="60dp">
+    </FrameLayout>
+
+
 </RelativeLayout>

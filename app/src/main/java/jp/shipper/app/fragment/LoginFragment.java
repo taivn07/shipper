@@ -11,7 +11,7 @@ public class LoginFragment extends BaseFragment {
     private Button mButtonLoginFacebook, mButtonLoginShipper;
 
     @Override
-    int getLayout() {
+    public int getLayout() {
         return R.layout.login_fragment;
     }
 

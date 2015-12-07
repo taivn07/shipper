@@ -15,7 +15,7 @@ public class FooterFragment extends BaseFragment implements View.OnClickListener
     private int mCurrentTab = 0;
 
     @Override
-    int getLayout() {
+    public int getLayout() {
         return R.layout.footer_layout;
     }
 

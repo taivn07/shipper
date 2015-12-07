@@ -1,11 +1,21 @@
 package jp.shipper.app.fragment;
 
+import android.os.Bundle;
+import android.view.View;
+
 import jp.shipper.app.R;
 
-public class HistoryShipFragment extends BaseFragment {
+public class HistoryShipFragment extends TabBaseFragment {
 
     @Override
-    int getLayout() {
+    public int getLayout() {
         return R.layout.history_ship_fragment;
+    }
+
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        setHeaderTitle(getString(R.string.tab_history));
     }
 }

@@ -8,7 +8,7 @@ import jp.shipper.app.R;
 public class LoadingFragment extends BaseFragment {
 
     @Override
-    int getLayout() {
+    public int getLayout() {
         return R.layout.loading_fragment;
     }
 
@@ -16,5 +16,6 @@ public class LoadingFragment extends BaseFragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        hideHeader();
     }
 }

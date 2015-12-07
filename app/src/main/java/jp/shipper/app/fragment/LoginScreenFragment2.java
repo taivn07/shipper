@@ -10,7 +10,7 @@ import jp.shipper.app.R;
  */
 public class LoginScreenFragment2 extends BaseFragment {
     @Override
-    int getLayout() {
+    public int getLayout() {
         return R.layout.login_screen_fragment_2;
     }
 

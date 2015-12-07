@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 
 import jp.shipper.app.R;
 
-public class CreateShipFragment extends BaseFragment implements View.OnClickListener{
+public class CreateShipFragment extends TabBaseFragment implements View.OnClickListener{
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -25,7 +25,7 @@ public class CreateShipFragment extends BaseFragment implements View.OnClickList
     }
 
     @Override
-    int getLayout() {
+    public int getLayout() {
         return R.layout.create_ship_fragment;
     }
 
@@ -34,7 +34,7 @@ public class CreateShipFragment extends BaseFragment implements View.OnClickList
         super.onViewCreated(view, savedInstanceState);
 
         mRootView.findViewById(R.id.bt_create_ship).setOnClickListener(this);
-
+        setHeaderTitle(getString(R.string.tab_create));
     }
 
     @Override
