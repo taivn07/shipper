@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:padding="10dp"
-        android:src="@android:drawable/ic_dialog_info"/>
+        android:src="@drawable/ic_view_headline_white_48dp"/>
 
     <TextView
         android:id="@+id/tv_navi_header"
