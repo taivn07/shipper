@@ -21,4 +21,26 @@
     <string name="tab_history">History</string>
     <string name="tab_notification">Notification</string>
     <string name="tab_map">Map</string>
+
+    <string name="login_2_dang_nhap"> Đăng Nhập </string>
+    <string name="login_2_quen_mat_khau"> Quên Mật Khẩu</string>
+    <string name="login_2_dang_ky"> Đăng Ký </string>
+    
+    <string-array name="profile_edit_screen_quan">
+        <item> Ba Đình </item>
+        <item> Cầu Giấy </item>
+        <item> Hoàng Mai </item>
+        <item> Long Biên </item>
+    </string-array>
+
+    <string-array name="profile_edit_screen_thanhpho">
+        <item>Hà Nội </item>
+        <item> Đà Nẵng </item>
+        <item> Hồ Chí Minh </item>
+        <item> Long Biên </item>
+    </string-array>
+    
+    <string name="profile_edit_screen_name">Tuyên</string>
+    <string name="profile_edit_screen_phone_number"> 012345678 </string>
+    <string name="profile_edit_screen_address"> Lê Hồng Phong - Ba Đình - Hà Nội </string>
 </resources>

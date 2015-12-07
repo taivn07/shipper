@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login_2_dang_nhap"> Đăng Nhập </string>
+    <string name="login_2_quen_mat_khau"> Quên Mật Khẩu</string>
+    <string name="login_2_dang_ky"> Đăng Ký </string>
+</resources>

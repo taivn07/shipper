@@ -37,3 +37,11 @@ captures/
 
 .idea/workspace.xml
 .idea/libraries
+.idea/.name
+.idea/encodings.xml
+.idea/gradle.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+app/app.iml
+shipper.iml
