@@ -9,4 +9,5 @@
     <color name="profile_color_view"> #FFAB40 </color>
     <color name="friend_invite_screen_backgroun_linear_layout">#f9f1e7</color>
     <color name="register_screen_background_textview">#BDBDBD</color>
+    <color name="friend_invite_background">#fbf4ed</color>
 </resources>

@@ -58,4 +58,8 @@
     <string name="share_app_screen_makm"> Mã Khuyến Mại PICO </string>
     <string name="share_app_screen_facebook"> http://facebook.com/homeship </string>
     <string name="share_app_screen_chiase"> Chia Sẻ </string>
+
+    <string name="friend_invite_screen_moi_ban_qua_facebook"> Mời bạn Bè Qua Facebook</string>
+    <string name="friend_invite_screen_moi_ban_qua_homeship"> Mời bạn bè qua HomeShip</string>
+    <string name="friend_invite_screen_moi_ban_qua_danhba"> Mời bạn qua danh bạ</string>
 </resources>
