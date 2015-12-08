@@ -1,6 +1,8 @@
 package jp.shipper.app.fragment;
 
-import jp.shipper.app.acitivty.TabBarActivity;
+import android.app.Fragment;
+
+import jp.shipper.app.acitivty.TabBarAcitivity;
 
 public class TabBaseFragment extends BaseFragment {
 
@@ -9,12 +11,16 @@ public class TabBaseFragment extends BaseFragment {
         return 0;
     }
 
-    public void showHeader(){
-        ((TabBarActivity)getActivity()).showHeader();
+    public void setHeaderTitle(String title){
+        ((TabBarAcitivity)getActivity()).setHeaderTitle(title);
     }
 
-    public void setHeaderTitle(String title){
-        ((TabBarActivity)getActivity()).setHeaderTitle(title);
+    public void showFragment(Fragment fragment){
+        ((TabBarAcitivity)getActivity()).showFragment(fragment);
+    }
+
+    public void setCurrentMenu(int index){
+        ((TabBarAcitivity)getActivity()).setCurrentMenu(index);
     }
 
 }

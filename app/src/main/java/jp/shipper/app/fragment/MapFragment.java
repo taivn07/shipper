@@ -17,5 +17,6 @@ public class MapFragment extends TabBaseFragment{
         super.onViewCreated(view, savedInstanceState);
 
         setHeaderTitle(getString(R.string.tab_map));
+        setCurrentMenu(0);
     }
 }

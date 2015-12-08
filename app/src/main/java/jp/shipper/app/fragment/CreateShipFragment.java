@@ -35,6 +35,7 @@ public class CreateShipFragment extends TabBaseFragment implements View.OnClickL
 
         mRootView.findViewById(R.id.bt_create_ship).setOnClickListener(this);
         setHeaderTitle(getString(R.string.tab_create));
+        setCurrentMenu(0);
     }
 
     @Override

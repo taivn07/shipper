@@ -5,7 +5,7 @@ import android.view.View;
 
 import jp.shipper.app.R;
 
-public class FooterFragment extends BaseFragment implements View.OnClickListener{
+public class FooterFragment extends TabBaseFragment implements View.OnClickListener{
 
     public static final int TAB_CREATE = 1;
     public static final int TAB_HISTORY = 2;
@@ -31,6 +31,17 @@ public class FooterFragment extends BaseFragment implements View.OnClickListener
         setCurrentTab(TAB_CREATE);
     }
 
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        mCurrentTab = 0;
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+    }
+
     public int getCurrentTab() {
         return mCurrentTab;
     }
@@ -53,6 +64,8 @@ public class FooterFragment extends BaseFragment implements View.OnClickListener
                 mCurrentTab = TAB_MAP;
                 showFragment(new MapFragment());
                 break;
+            default:
+                mCurrentTab = index;
         }
     }
 
