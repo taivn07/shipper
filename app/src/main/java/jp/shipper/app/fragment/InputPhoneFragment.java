@@ -7,7 +7,7 @@ import jp.shipper.app.R;
  */
 public class InputPhoneFragment extends TabBaseFragment{
     @Override
-    protected int getLayout() {
+    public int getLayout() {
         return R.layout.input_phone_fragment;
     }
 }

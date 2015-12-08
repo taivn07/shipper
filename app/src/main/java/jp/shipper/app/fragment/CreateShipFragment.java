@@ -25,7 +25,7 @@ public class CreateShipFragment extends TabBaseFragment implements View.OnClickL
     }
 
     @Override
-    protected int getLayout() {
+    public int getLayout() {
         return R.layout.create_ship_fragment;
     }
 

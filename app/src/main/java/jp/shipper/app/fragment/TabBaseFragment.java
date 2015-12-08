@@ -5,7 +5,7 @@ import jp.shipper.app.acitivty.TabBarActivity;
 public class TabBaseFragment extends BaseFragment {
 
     @Override
-    protected  int getLayout() {
+    public  int getLayout() {
         return 0;
     }
 

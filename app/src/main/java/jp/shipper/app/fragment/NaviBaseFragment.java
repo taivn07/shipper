@@ -8,7 +8,7 @@ import jp.shipper.app.acitivty.NaviAcitivity;
 public class NaviBaseFragment extends BaseFragment {
 
     @Override
-    protected int getLayout() {
+    public int getLayout() {
         return 0;
     }
 

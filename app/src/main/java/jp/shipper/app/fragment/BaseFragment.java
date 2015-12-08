@@ -17,7 +17,7 @@ public abstract class BaseFragment extends Fragment {
 
 	protected static String TAG;
 
-	protected abstract int getLayout();
+	public abstract int getLayout();
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,

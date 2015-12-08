@@ -13,7 +13,7 @@
         android:theme="@style/AppTheme" >
 
         <activity
-            android:name="jp.shipper.app.acitivty.MainActivity">
+            android:name="jp.shipper.app.acitivty.NaviAcitivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -22,7 +22,7 @@
 
         <activity android:name="jp.shipper.app.acitivty.TabBarActivity"/>
 
-        <activity android:name="jp.shipper.app.acitivty.NaviAcitivity"/>
+        <!--<activity android:name="jp.shipper.app.acitivty.NaviAcitivity"/>-->
 
     </application>
 

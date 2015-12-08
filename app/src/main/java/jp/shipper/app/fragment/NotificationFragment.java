@@ -8,7 +8,7 @@ import jp.shipper.app.R;
 public class NotificationFragment extends TabBaseFragment{
 
     @Override
-    protected int getLayout() {
+    public int getLayout() {
         return R.layout.notification_fragment;
     }
 

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_loading_screen">
+
+    <ImageView
+        android:id="@+id/register_screen_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/homeship" />
+
+    <LinearLayout
+        android:id="@+id/register_screen_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_screen_img"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/register_screen_background_textview"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="@string/register_screen_dang_ky_su_dung"
+            android:textSize="@dimen/register_screen_text_size" />
+
+        <EditText
+            android:layout_width="@dimen/register_screen_width_view"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:hint="@string/register_screen_so_dien_thoai"
+            android:textSize="@dimen/register_screen_text_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/register_screen_heigh_view"
+            android:background="@color/background_loading_screen" />
+
+        <EditText
+            android:layout_width="@dimen/register_screen_width_view"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:hint="@string/register_screen_mat_khau"
+            android:textSize="@dimen/register_screen_text_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/register_screen_heigh_view"
+            android:background="@color/background_loading_screen" />
+
+        <EditText
+            android:layout_width="@dimen/register_screen_width_view"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:hint="@string/register_screen_xac_nhan_mat_khau"
+            android:textSize="@dimen/register_screen_text_size" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="@dimen/register_screen_width_view"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_screen_linearlayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_background"
+        android:text="@string/register_screen_dang_ky" />
+
+</RelativeLayout>

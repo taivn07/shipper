@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:id="@+id/friend_invite_screen_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/friend_invite_screen_backgroun_linear_layout"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/img_da_ket_ban" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/img_cho_ket_ban" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/img_lock" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/img_moi_ket_ban" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/friend_invite_button_moi_ban_qua_facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/friend_invite_screen_linearlayout"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button"
+        android:text="Mời bạn Bè Qua facebook"
+        android:textColor="@color/color_white"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/friend_invite_button_moi_ban_dang_dung_homeship"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/friend_invite_button_moi_ban_qua_facebook"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button"
+        android:text="Mời Bạn Bè Đang DÙNG HomeShip"
+        android:textColor="@color/color_white"
+        android:textSize="20sp" />
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/friend_invite_button_moi_ban_dang_dung_homeship"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button"
+        android:text="Mời Bạn Bè Trong Danh Bạ"
+        android:textColor="@color/color_white"
+        android:textSize="20sp" />
+</RelativeLayout>

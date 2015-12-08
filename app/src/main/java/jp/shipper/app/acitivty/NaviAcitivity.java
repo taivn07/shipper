@@ -30,8 +30,8 @@ public class NaviAcitivity extends BaseActivity implements View.OnClickListener 
         setContentView(R.layout.navi_activity);
 
         findViewById(R.id.img_menu).setOnClickListener(this);
-        findViewById(R.id.tv_personal_info).setOnClickListener(this);
-        findViewById(R.id.tv_guide).setOnClickListener(this);
+        //findViewById(R.id.tv_personal_info).setOnClickListener(this);
+        //findViewById(R.id.tv_guide).setOnClickListener(this);
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mLeftDrawer = (LinearLayout) findViewById(R.id.left_drawer);
@@ -58,20 +58,21 @@ public class NaviAcitivity extends BaseActivity implements View.OnClickListener 
     public void onClick(View view) {
         if (R.id.img_menu == view.getId()) {
             toggleMenu();
-        } else if (R.id.tv_personal_info == view.getId()) {
-            toggleMenu();
-            if(MENU_PERSONAL_INFO != mCurrentMenu){
-                mCurrentMenu = MENU_PERSONAL_INFO;
-                showMenu(mCurrentMenu);
-            }
-        } else if (R.id.tv_guide == view.getId()) {
-            toggleMenu();
-            if(MENU_GUIDE != mCurrentMenu){
-                mCurrentMenu = MENU_GUIDE;
-                showMenu(mCurrentMenu);
-            }
         }
-    }
+//        } else if (R.id.tv_personal_info == view.getId()) {
+//            toggleMenu();
+//            if(MENU_PERSONAL_INFO != mCurrentMenu){
+//                mCurrentMenu = MENU_PERSONAL_INFO;
+//                showMenu(mCurrentMenu);
+//            }
+//        } else if (R.id.tv_guide == view.getId()) {
+//            toggleMenu();
+//            if(MENU_GUIDE != mCurrentMenu){
+//                mCurrentMenu = MENU_GUIDE;
+//                showMenu(mCurrentMenu);
+//            }
+//        }
+        }
 
     private void toggleMenu() {
         if (mDrawerLayout.isDrawerOpen(mLeftDrawer)) {
@@ -87,7 +88,7 @@ public class NaviAcitivity extends BaseActivity implements View.OnClickListener 
                 .commit();
     }
 
-    public void setHeaderTitle(String title){
+    public void setHeaderTitle(String title) {
         ((TextView) findViewById(R.id.tv_navi_header)).setText(title);
     }
 

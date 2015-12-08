@@ -8,7 +8,7 @@ import jp.shipper.app.R;
 public class MapFragment extends TabBaseFragment{
 
     @Override
-    protected int getLayout() {
+    public int getLayout() {
         return R.layout.map_fragment;
     }
 

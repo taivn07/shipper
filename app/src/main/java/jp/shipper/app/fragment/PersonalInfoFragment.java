@@ -11,7 +11,7 @@ import jp.shipper.app.R;
 public class PersonalInfoFragment extends NaviBaseFragment{
 
     @Override
-    protected int getLayout() {
+    public int getLayout() {
         return R.layout.personal_info_fragment;
     }
 
