@@ -1,21 +1,295 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Create ship"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFE4E1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/bt_create_ship"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"
-        android:text="Create ship"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#FFE4E1"
+            android:gravity="center_horizontal"
+            android:paddingTop="5dip">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:gravity="start"
+                android:paddingLeft="10dip"
+                android:shadowColor="#FF9900"
+                android:shadowDx="2.0"
+                android:shadowDy="2.0"
+                android:shadowRadius="5.0"
+                android:text="@string/lablenhanhang"
+                android:textColor="@color/OrangeRed1"
+                android:textSize="10.0dip"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnAddAndress"
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:layout_marginRight="50dip"
+                android:background="@drawable/icon_btnchoosemap" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/txtMsg"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:background="@drawable/color_edge_background"
+            android:gravity="center|left|top"
+            android:maxLines="15"
+            android:padding="10dp"
+            android:scrollbars="vertical"
+            android:textColor="#ff000000"
+            android:textSize="16.0sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="left"
+                android:paddingLeft="10.0dip"
+                android:shadowColor="#FF9900"
+                android:shadowDx="2.0"
+                android:shadowDy="2.0"
+                android:shadowRadius="5.0"
+                android:text="@string/lablegiaohang"
+                android:textColor="@color/OrangeRed1"
+                android:textSize="10.0dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/yeucaugiaohang"
+            android:layout_width="fill_parent"
+            android:layout_height="100.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:background="@drawable/color_edge_background"
+            android:gravity="center|left|top"
+            android:maxLines="15"
+            android:padding="10dp"
+            android:scrollbars="vertical"
+            android:textColor="#ff000000"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="10.0dip"
+            android:shadowColor="#ffffffff"
+            android:shadowDx="2.0"
+            android:shadowDy="2.0"
+            android:shadowRadius="5.0"
+            android:text="@string/lableThanhToan"
+            android:textColor="#ff000000"
+            android:textSize="15.0dip"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:padding="3dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/icon_dola"
+                android:text="@string/lablephiship"
+                android:textColor="#ff000000"
+                android:layout_weight="1"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/phiship"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/color_edge_background"
+                android:gravity="right|center_vertical"
+                android:padding="5dp"
+                android:textColor="#ff000000"
+                android:layout_weight="0.5"
+                android:inputType="number"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/labletigia"
+                android:textColor="#ff000000"
+                android:layout_weight="1"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#FFFFFF"
+            android:gravity="center_horizontal"
+            android:padding="3dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:drawableRight="@drawable/icon_dola"
+                android:paddingLeft="1.0dip"
+                android:text="@string/labletienhang"
+                android:textColor="#ff000000"
+                android:textStyle="bold"
+            />
+
+            <EditText
+                android:id="@+id/tienhang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/color_edge_background"
+                android:gravity="right|center_vertical"
+                android:layout_weight="0.5"
+                android:padding="5dp"
+                android:textColor="#ff000000"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/labletigia"
+                android:textColor="#ff000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#FFFFFF"
+            android:gravity="center_horizontal"
+            android:padding="3dip">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left|top"
+                android:text="@string/lablehinhthucthanhtoan"
+                android:textColor="#ff000000"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerthanhtoan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/style_spinner"
+                android:entries="@array/thanhtoan_arrays"
+                android:gravity="center|left|top"
+                android:layout_weight="0.5"
+                android:prompt="@string/tienmat" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left|top"
+                android:text=""
+                android:textColor="#ff000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#FFE4E1"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/lablenote"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:paddingLeft="10.0dip"
+                android:text="@string/lablenote"
+                android:textColor="@color/OrangeRed1"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_weight="1.0"
+                android:text="@string/KM"
+                android:textColor="@color/OrangeRed1"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/makhuyenmai"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/lablenote"
+                android:layout_weight="0.5"
+                android:background="#DDDDDD"
+                android:drawableLeft="@drawable/icon_makm"
+                android:gravity="center|left|top"
+                android:maxLines="15"
+                android:padding="10dp"
+                android:textColor="#ff000000"
+                android:textSize="16.0sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left|top"
+                android:text=""
+                android:textColor="#ff000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="3.0dip">
+
+            <Button
+                android:id="@+id/btnTaoDon"
+                android:layout_width="150dip"
+                android:layout_height="50dip"
+                android:background="#FF9900"
+                android:gravity="center"
+                android:text="Tạo Đơn"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </LinearLayout>
 
 
 </RelativeLayout>

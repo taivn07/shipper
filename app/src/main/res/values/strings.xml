@@ -58,4 +58,20 @@
     <string name="share_app_screen_makm"> Mã Khuyến Mại PICO </string>
     <string name="share_app_screen_facebook"> http://facebook.com/homeship </string>
     <string name="share_app_screen_chiase"> Chia Sẻ </string>
+    <string name="lable">Vận Đơn Mới</string>
+    <string name="lablegiaohang">Yêu cầu giao hàng</string>
+    <string name="lablenhanhang">Nhận hàng tại</string>
+    <string name="lableThanhToan">Thông Tin Thanh Toán</string>
+    <string name="lablephiship">Phí Ship:</string>
+    <string name="labletigia">VND</string>
+    <string name="labletienhang">Tiền Hàng</string>
+    <string name="lablehinhthucthanhtoan">Thanh Toán</string>
+    <string name="lablenote">Tặng ngay 20.000 khi giao dịch qua ví</string>
+    <string name="tienmat">Tiền Mặt</string>
+    <string name="KM">MÃ KM</string>
+    <string-array name="thanhtoan_arrays">
+        <item>tiền mặt</item>
+        <item>bảo lãnh</item>
+    </string-array>
+    <string name="lableinputphone">Nhập số điện thoại để tạo đơn hàng</string>
 </resources>

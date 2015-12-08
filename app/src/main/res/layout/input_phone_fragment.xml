@@ -1,11 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30.0dip"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dip" >
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lableinputphone"
+            android:gravity="center"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="input phone"/>
-
+    </LinearLayout>
+    <EditText
+        android:id="@+id/phonenumber"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_marginLeft="30.0dip"
+        android:layout_marginRight="30.0dip"
+        android:background="@drawable/color_edge_background"
+        android:paddingTop="15dip"
+        android:hint="Phone Number"
+        android:gravity="center|top"
+        android:maxLines="15"
+        android:scrollbars="vertical"
+        android:textColor="#ff000000"
+        android:textSize="16.0sp" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dip" >
+        <Button
+            android:id="@+id/btnAcess"
+            android:layout_width="150dip"
+            android:layout_height="55dip"
+            android:background="@drawable/btn_acess"
+            android:padding="10dip"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:background="#FFE4E1">
+    </LinearLayout>
 </LinearLayout>

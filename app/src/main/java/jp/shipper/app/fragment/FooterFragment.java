@@ -62,7 +62,7 @@ public class FooterFragment extends TabBaseFragment implements View.OnClickListe
                 break;
             case TAB_MAP:
                 mCurrentTab = TAB_MAP;
-                showFragment(new MapFragment());
+                showFragment(new MapAddressFragment());
                 break;
             default:
                 mCurrentTab = index;
