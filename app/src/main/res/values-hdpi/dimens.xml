@@ -29,4 +29,6 @@
     <dimen name="share_app_screen_textsize_15"> 15sp</dimen>
     <dimen name="share_app_screen_width_button">300dp</dimen>
 
+    <dimen name="enter_otp_width_view"> 300dp</dimen>
+
 </resources>

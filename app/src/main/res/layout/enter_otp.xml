@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_loading_screen">
+
+    <ImageView
+        android:id="@+id/enter_otp_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/homeship" />
+
+    <TextView
+        android:id="@+id/enter_otp_textview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enter_otp_img"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:text="@string/enter_otp_xac_nhan_ma_dang_ky" />
+
+    <TextView
+        android:id="@+id/enter_otp_textview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enter_otp_textview1"
+        android:background="@color/register_screen_background_textview"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:text="@string/enter_otp__nhap_ma_xac_nhan" />
+
+    <LinearLayout
+        android:id="@+id/enter_otp_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enter_otp_textview2"
+        android:layout_marginTop="5dp"
+        android:background="@color/color_white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="@dimen/enter_otp_width_view"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="@string/enter_otp_ma_xac_nhan" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/background_loading_screen" />
+
+        <Button
+            android:layout_width="@dimen/enter_otp_width_view"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_background"
+            android:text="@string/enter_otp_button_chua_co_ma" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="@dimen/enter_otp_width_view"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enter_otp_linearlayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_background"
+        android:text="@string/enter_otp_button_hoan_thanh" />
+</RelativeLayout>

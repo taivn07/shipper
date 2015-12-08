@@ -62,4 +62,10 @@
     <string name="friend_invite_screen_moi_ban_qua_facebook"> Mời bạn Bè Qua Facebook</string>
     <string name="friend_invite_screen_moi_ban_qua_homeship"> Mời bạn bè qua HomeShip</string>
     <string name="friend_invite_screen_moi_ban_qua_danhba"> Mời bạn qua danh bạ</string>
+
+    <string name="enter_otp_xac_nhan_ma_dang_ky">Xác Nhận Mã Đăng Ký </string>
+    <string name="enter_otp__nhap_ma_xac_nhan">Nhập Mã Gửi Qua Số Điện Thoại Của Bạn </string>
+    <string name="enter_otp_ma_xac_nhan">Mã Xác Nhận</string>
+    <string name="enter_otp_button_chua_co_ma">Chưa Có Mã</string>
+    <string name="enter_otp_button_hoan_thanh">Hoàn Thành</string>
 </resources>
