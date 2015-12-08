@@ -19,4 +19,14 @@
     <dimen name="profile_edit_screen_text_size_address"> 18sp </dimen>
     <dimen name="profile_edit_screen_text_size_phone_number"> 20sp</dimen>
 
+    <dimen name="register_screen_width_view"> 300dp</dimen>
+    <dimen name="register_screen_heigh_view">2dp</dimen>
+    <dimen name="register_screen_text_size"> 20sp</dimen>
+    <dimen name="share_app_screen_heigh_view"> 50dp</dimen>
+    <dimen name="share_app_screen_textsize">20sp</dimen>
+    <dimen name="share_app_screen_width">170dp</dimen>
+    <dimen name="share_app_screen_heigh"> 150dp</dimen>
+    <dimen name="share_app_screen_textsize_15"> 15sp</dimen>
+    <dimen name="share_app_screen_width_button">300dp</dimen>
+
 </resources>
