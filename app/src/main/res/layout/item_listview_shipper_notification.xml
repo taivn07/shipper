@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/item_shipper_notification_img_HS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_homeship" />
+
+    <TextView
+        android:id="@+id/shipper_notification_tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:layout_toRightOf="@id/item_shipper_notification_img_HS"
+        android:text="Bạn Nhận đi ship từ alialiShop dsdf dsdf dasdfd "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/shipper_notification_tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shipper_notification_tv_content"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/item_shipper_notification_img_HS"
+        android:text="2010 november 23 08:00"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/shipper_notification_img_contentType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_homeship" />
+
+</RelativeLayout>
