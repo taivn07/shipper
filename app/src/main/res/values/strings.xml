@@ -58,6 +58,16 @@
     <string name="share_app_screen_makm"> Mã Khuyến Mại PICO </string>
     <string name="share_app_screen_facebook"> http://facebook.com/homeship </string>
     <string name="share_app_screen_chiase"> Chia Sẻ </string>
+
+    <string name="friend_invite_screen_moi_ban_qua_facebook"> Mời bạn Bè Qua Facebook</string>
+    <string name="friend_invite_screen_moi_ban_qua_homeship"> Mời bạn bè qua HomeShip</string>
+    <string name="friend_invite_screen_moi_ban_qua_danhba"> Mời bạn qua danh bạ</string>
+
+    <string name="enter_otp_xac_nhan_ma_dang_ky">Xác Nhận Mã Đăng Ký </string>
+    <string name="enter_otp__nhap_ma_xac_nhan">Nhập Mã Gửi Qua Số Điện Thoại Của Bạn </string>
+    <string name="enter_otp_ma_xac_nhan">Mã Xác Nhận</string>
+    <string name="enter_otp_button_chua_co_ma">Chưa Có Mã</string>
+    <string name="enter_otp_button_hoan_thanh">Hoàn Thành</string>
     <string name="lable">Vận Đơn Mới</string>
     <string name="lablegiaohang">Yêu cầu giao hàng</string>
     <string name="lablenhanhang">Nhận hàng tại</string>
@@ -74,6 +84,7 @@
         <item>bảo lãnh</item>
     </string-array>
     <string name="lableinputphone">Nhập số điện thoại để tạo đơn hàng</string>
+
     <string name="lablebuttonToanbo">Toàn Bộ</string>
     <string name="lablebuttonChoShip">Chờ Ship</string>
     <string name="lablebuttonThanhCong">Thành Công</string>
@@ -84,4 +95,11 @@
     <string name="lablenguoidanhan">Có 4 shipper đã nhận giao</string>
     <string name="Cancel">Cancel</string>
     <string name="OK">OK</string>
+
+
+    <string name="btn_back">Back</string>
+    <string name="label_chatting">Đang chat</string>
+    <string name="btn_send">Gửi</string>
+
+>>>>>>> 5cba3d45a316419f8bbb1b3a00887d047764b833
 </resources>

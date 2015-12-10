@@ -9,6 +9,7 @@
     <color name="profile_color_view"> #FFAB40 </color>
     <color name="friend_invite_screen_backgroun_linear_layout">#f9f1e7</color>
     <color name="register_screen_background_textview">#BDBDBD</color>
+    <color name="friend_invite_background">#fbf4ed</color>
 
     <item name="blue" type="color">#FF33B5E5</item>
     <item name="purple" type="color">#FFAA66CC</item>
@@ -21,4 +22,10 @@
     <item name="darkorange" type="color">#FFFF8800</item>
     <item name="darkred" type="color">#FFCC0000</item>
     <item name="OrangeRed1" type="color">#FF4500</item>
+
+    <!--ChatActivity Color-->
+    <color name="toolbar_background">@android:color/white</color>
+    <color name="toolbar_text_color">#F44336</color>
+    <color name="btn_send_text_color">#0022ff</color>
+    <color name="btn_send_text_color_clicked">#990022ff</color>
 </resources>
