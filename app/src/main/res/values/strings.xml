@@ -85,8 +85,21 @@
     </string-array>
     <string name="lableinputphone">Nhập số điện thoại để tạo đơn hàng</string>
 
+    <string name="lablebuttonToanbo">Toàn Bộ</string>
+    <string name="lablebuttonChoShip">Chờ Ship</string>
+    <string name="lablebuttonThanhCong">Thành Công</string>
+    <string name="lablecannguoi">Cần người giao quần áo đi Giao Thủy</string>
+    <string name="lablephi">Tiền Hàng: 300k Phí Ship 20k</string>
+    <string name="lablebaolanh">Qua ví</string>
+    <string name="lablenguoinhan">Có 10 shipper đã nhận được tin này</string>
+    <string name="lablenguoidanhan">Có 4 shipper đã nhận giao</string>
+    <string name="Cancel">Cancel</string>
+    <string name="OK">OK</string>
+
+
     <string name="btn_back">Back</string>
     <string name="label_chatting">Đang chat</string>
     <string name="btn_send">Gửi</string>
 
+>>>>>>> 5cba3d45a316419f8bbb1b3a00887d047764b833
 </resources>
