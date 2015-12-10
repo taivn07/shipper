@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        android:id="@+id/ba"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+    <Button
+        android:id="@+id/btnchooseshipper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:drawableTop="@drawable/ic_choose"
+        android:text="Chọn"
+        android:textColor="@color/wallet_bright_foreground_holo_light"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/nameshipper"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        android:layout_weight="0.4"/>
+
+    <Button
+        android:id="@+id/chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_chat"
+        android:background="@color/color_white"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_call"
+        android:background="@color/color_white"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_like"
+        android:background="@color/color_white"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/txtlike"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        android:text="100"
+        android:layout_weight="0.6"/>
+
+    <Button
+        android:id="@+id/dislike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_dislike"
+        android:background="@color/color_white"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/txtdislike"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        android:text="10"
+        android:layout_weight="1"/>
+        </LinearLayout>
+

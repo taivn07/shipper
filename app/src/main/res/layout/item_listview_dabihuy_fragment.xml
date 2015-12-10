@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE4E1"
+    android:fillViewport="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/edge_listview_cholayhang">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_weight="2.5"
+            android:background="@color/register_screen_background_textview"
+
+            android:drawableLeft="@drawable/ic"
+            android:gravity="center"
+            android:text="date"
+            android:textSize="16dip"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:background="@color/orange">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="150dp">
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="fill_parent"
+                    android:gravity="bottom"
+                    android:layout_height="40dp"
+                    android:background="@color/register_screen_background_textview"
+                    android:textColor="@color/red"
+                    android:text="time"
+                    />
+
+                <TextView
+                    android:id="@+id/cannguoi"
+                    android:layout_width="fill_parent"
+                    android:layout_height="80dp"
+                    android:layout_below="@id/date"
+                    android:textColor="@color/blue"
+                    android:background="@color/register_screen_background_textview"
+                    android:text="cần người giao quần áo đi Xuân Thủy"/>
+
+                <TextView
+                    android:id="@+id/trangthaiship"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/cannguoi"
+                    android:background="@color/register_screen_background_textview"
+                    android:text="Có 10 shipper đã nhận được tin này"
+                    android:textColor="@color/red"
+                    android:gravity="bottom"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:background="@color/color_white">
+        <Button
+            android:id="@+id/call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_white"
+            android:drawableTop="@drawable/ic_call"
+            android:text="Gọi"
+            android:textColor="@color/wallet_primary_text_holo_light"/>
+
+        <Button
+            android:id="@+id/chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_white"
+            android:drawableTop="@drawable/ic_chat"
+            android:text="Chat"
+            android:textColor="@color/wallet_primary_text_holo_light"/>
+        <Button
+            android:id="@+id/danhgia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_white"
+            android:drawableTop="@drawable/ic_danhgia"
+            android:text="Đánh giá"
+            android:visibility="visible"
+            android:textColor="@color/wallet_primary_text_holo_light"/>
+        <Button
+            android:id="@+id/danglai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_white"
+            android:drawableTop="@drawable/ic_danglai"
+            android:text="Đăng Lại"
+            android:visibility="visible"
+            android:textColor="@color/wallet_primary_text_holo_light"/>
+
+        <Button
+            android:id="@+id/nhatky"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_white"
+            android:drawableTop="@drawable/ic_nhatky"
+            android:text="Nhật Ký"
+            android:textColor="@color/wallet_primary_text_holo_light"/>
+
+
+
+        <Button
+            android:id="@+id/huydon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_white"
+            android:drawableTop="@drawable/ic_huydon"
+            android:text="Hủy Đơn"
+            android:visibility="invisible"
+            android:textColor="@color/wallet_primary_text_holo_light"/>
+    </LinearLayout>
+</LinearLayout>
