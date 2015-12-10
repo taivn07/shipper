@@ -10,19 +10,22 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import jp.shipper.app.R;
+import jp.shipper.app.fragment.FooterFragment;
 import jp.shipper.app.fragment.GuideFragment;
 import jp.shipper.app.fragment.PersonalInfoFragment;
 
-public class NaviAcitivity extends BaseActivity implements View.OnClickListener {
+public class TabBarAcitivity extends BaseActivity implements View.OnClickListener {
 
     private DrawerLayout mDrawerLayout;
     private LinearLayout mLeftDrawer;
     private ActionBarDrawerToggle mDrawerToggle;
 
-    private int mCurrentMenu = MENU_PERSONAL_INFO;
+    private int mCurrentMenu = 0;
 
     public static final int MENU_PERSONAL_INFO = 1;
     public static final int MENU_GUIDE = 2;
+
+    private FooterFragment mFooter = new FooterFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +33,6 @@ public class NaviAcitivity extends BaseActivity implements View.OnClickListener 
         setContentView(R.layout.navi_activity);
 
         findViewById(R.id.img_menu).setOnClickListener(this);
-        //findViewById(R.id.tv_personal_info).setOnClickListener(this);
-        //findViewById(R.id.tv_guide).setOnClickListener(this);
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mLeftDrawer = (LinearLayout) findViewById(R.id.left_drawer);
@@ -40,16 +41,31 @@ public class NaviAcitivity extends BaseActivity implements View.OnClickListener 
 
         mDrawerLayout.setDrawerListener(mDrawerToggle);
 
-        showMenu(MENU_PERSONAL_INFO);
+        findViewById(R.id.ll_guide).setOnClickListener(this);
+        findViewById(R.id.ll_personal_info).setOnClickListener(this);
+
+        showFragmentFooter(mFooter);
+    }
+
+    public void showFragmentFooter(Fragment fragment){
+        FragmentManager fm = getFragmentManager();
+        fm.beginTransaction().replace(R.id.frame_footer, fragment)
+                .commit();
+    }
+
+    public void setCurrentMenu(int currentMenu) {
+        this.mCurrentMenu = currentMenu;
     }
 
     public void showMenu(int index) {
         switch (index) {
             case MENU_PERSONAL_INFO:
                 showFragment(new PersonalInfoFragment());
+                mFooter.setCurrentTab(0);
                 break;
             case MENU_GUIDE:
                 showFragment(new GuideFragment());
+                mFooter.setCurrentTab(0);
                 break;
         }
     }
@@ -58,20 +74,19 @@ public class NaviAcitivity extends BaseActivity implements View.OnClickListener 
     public void onClick(View view) {
         if (R.id.img_menu == view.getId()) {
             toggleMenu();
+        } else if (R.id.ll_personal_info == view.getId()) {
+            toggleMenu();
+            if(MENU_PERSONAL_INFO != mCurrentMenu){
+                mCurrentMenu = MENU_PERSONAL_INFO;
+                showMenu(mCurrentMenu);
+            }
+        } else if (R.id.ll_guide == view.getId()) {
+            toggleMenu();
+            if(MENU_GUIDE != mCurrentMenu){
+                mCurrentMenu = MENU_GUIDE;
+                showMenu(mCurrentMenu);
+            }
         }
-//        } else if (R.id.tv_personal_info == view.getId()) {
-//            toggleMenu();
-//            if(MENU_PERSONAL_INFO != mCurrentMenu){
-//                mCurrentMenu = MENU_PERSONAL_INFO;
-//                showMenu(mCurrentMenu);
-//            }
-//        } else if (R.id.tv_guide == view.getId()) {
-//            toggleMenu();
-//            if(MENU_GUIDE != mCurrentMenu){
-//                mCurrentMenu = MENU_GUIDE;
-//                showMenu(mCurrentMenu);
-//            }
-//        }
         }
 
     private void toggleMenu() {
@@ -84,12 +99,12 @@ public class NaviAcitivity extends BaseActivity implements View.OnClickListener 
 
     public void showFragment(Fragment fragment) {
         FragmentManager fm = getFragmentManager();
-        fm.beginTransaction().replace(R.id.content_frame, fragment)
+        fm.beginTransaction().replace(R.id.frame_content_nav, fragment)
                 .commit();
     }
 
     public void setHeaderTitle(String title) {
-        ((TextView) findViewById(R.id.tv_navi_header)).setText(title);
+        ((TextView) findViewById(R.id.tv_header)).setText(title);
     }
 
     public int getCurrentMenu() {

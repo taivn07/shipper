@@ -13,7 +13,7 @@
         android:src="@drawable/ic_view_headline_white_48dp"/>
 
     <TextView
-        android:id="@+id/tv_navi_header"
+        android:id="@+id/tv_header"
         android:textColor="@color/color_white"
         android:textSize="20sp"
         android:layout_centerInParent="true"

@@ -48,6 +48,7 @@
         android:background="@color/profile_color_view" />
 
     <LinearLayout
+        android:id="@+id/ll_personal_info"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
@@ -89,6 +90,7 @@
         android:background="@color/profile_color_view" />
 
     <LinearLayout
+        android:id="@+id/ll_guide"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">

@@ -17,5 +17,6 @@ public class NotificationFragment extends TabBaseFragment{
         super.onViewCreated(view, savedInstanceState);
 
         setHeaderTitle(getString(R.string.tab_notification));
+        setCurrentMenu(0);
     }
 }

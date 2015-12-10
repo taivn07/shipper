@@ -17,5 +17,6 @@ public class HistoryShipFragment extends TabBaseFragment {
         super.onViewCreated(view, savedInstanceState);
 
         setHeaderTitle(getString(R.string.tab_history));
+        setCurrentMenu(0);
     }
 }
