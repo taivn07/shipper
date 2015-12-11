@@ -12,19 +12,19 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:background="@color/orange"
-            android:text="@string/lablebuttonToanbo"/>
+            android:text="@string/lablebuttonmoi"/>
         <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:background="@color/blue"
-            android:text="@string/lablebuttonChoShip"/>
+            android:text="@string/lablebuttonchohang"/>
         <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:background="@color/color_white"
-            android:text="@string/lablebuttonThanhCong"/>
+            android:text="@string/lablebuttondanhdau"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="fill_parent"
@@ -32,7 +32,7 @@
         android:layout_marginTop="5dp"
         android:background="#00FA9A">
         <ListView
-            android:id="@+id/lvTimShip"
+            android:id="@+id/lvwaitrecevership"
             android:layout_width="fill_parent"
             android:layout_height="match_parent"
             android:background="#00FA9A">

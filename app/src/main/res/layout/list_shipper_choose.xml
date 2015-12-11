@@ -3,17 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
-        android:id="@+id/ba"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="50dp">
     <Button
         android:id="@+id/btnchooseshipper"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/color_white"
-        android:drawableTop="@drawable/ic_choose"
+        android:drawableTop="@drawable/status_button_click"
         android:text="Chọn"
         android:textColor="@color/wallet_bright_foreground_holo_light"
         android:layout_weight="1"/>

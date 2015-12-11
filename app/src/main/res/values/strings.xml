@@ -18,6 +18,7 @@
     <string name="nhap_mat_khau"> Nhập Mật Khẩu </string>
 
     <string name="tab_create">Create</string>
+    <string name="tab_vandonmoi">Vận đơn mới</string>
     <string name="tab_history">History</string>
     <string name="tab_notification">Notification</string>
     <string name="tab_map">Map</string>
@@ -88,6 +89,9 @@
     <string name="lablebuttonToanbo">Toàn Bộ</string>
     <string name="lablebuttonChoShip">Chờ Ship</string>
     <string name="lablebuttonThanhCong">Thành Công</string>
+    <string name="lablebuttonmoi">Mới</string>
+    <string name="lablebuttonchohang">Chờ Đến Lấy Hàng</string>
+    <string name="lablebuttondanhdau">Đánh dấu</string>
     <string name="lablecannguoi">Cần người giao quần áo đi Giao Thủy</string>
     <string name="lablephi">Tiền Hàng: 300k Phí Ship 20k</string>
     <string name="lablebaolanh">Qua ví</string>
@@ -101,5 +105,9 @@
     <string name="label_chatting">Đang chat</string>
     <string name="btn_send">Gửi</string>
 
->>>>>>> 5cba3d45a316419f8bbb1b3a00887d047764b833
+    <string name="thanhtoanquatienmat">Thanh Toán Tiền Mặt</string>
+    <string-array name="hinhthuc_arrays">
+        <item>Thanh toán tiền mặt</item>
+        <item>Thanh toán qua ví</item>
+    </string-array>
 </resources>

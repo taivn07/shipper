@@ -46,7 +46,7 @@ public class ChoseAdapter extends BaseAdapter{
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        ViewHolder holder;
+        final ViewHolder holder;
 
         if (convertView == null) {
             LayoutInflater inflater = LayoutInflater.from(mContext);
@@ -63,10 +63,9 @@ public class ChoseAdapter extends BaseAdapter{
         holder.title.setText(choseItem.getTitle());
 
         holder.btnChose.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
-                Log.d("ducanh", choseItem.getTitle());
-
                 AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
 //                                    // Get the layout inflater
                                     LayoutInflater inflater = LayoutInflater.from(mContext);;
@@ -86,7 +85,6 @@ public class ChoseAdapter extends BaseAdapter{
                                             }).show();
             }
         });
-
         return convertView;
     }
 

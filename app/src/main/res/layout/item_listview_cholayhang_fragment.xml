@@ -8,7 +8,7 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="150dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/edge_listview_cholayhang">
 
         <TextView
@@ -67,7 +67,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:padding="5dp"
         android:background="@color/color_white">
 
@@ -130,5 +129,197 @@
             android:text="Hủy Đơn"
             android:visibility="visible"
             android:textColor="@color/wallet_primary_text_holo_light"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_giaohang"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:background="#CCFFFF"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="10.0dip"
+            android:text="Xac Nhan Thanh Toan"
+            android:textColor="#ff000000"
+            android:textSize="15.0dip"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phi Ship"
+            android:textColor="#ff000000"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:padding="3dp">
+            <EditText
+                android:id="@+id/phiship"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/color_edge_background"
+                android:gravity="right|center_vertical"
+                android:padding="5dp"
+                android:layout_marginLeft="10dip"
+                android:textColor="#ff000000"
+                android:layout_weight="0.5"
+                android:inputType="number"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="đ"
+                android:textColor="#ff000000"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="1.0dip"
+            android:text="@string/labletienhang"
+            android:textColor="#ff000000"
+            android:textStyle="bold"
+            />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="#FFFFFF"
+            android:gravity="center_horizontal"
+            android:padding="3dp">
+
+            <EditText
+                android:id="@+id/tienhang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/color_edge_background"
+                android:gravity="right|center_vertical"
+                android:layout_weight="0.5"
+                android:padding="5dp"
+                android:textColor="#ff000000"
+                android:layout_marginLeft="10dp"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:textSize="15sp"
+                android:text="đ"
+                android:textColor="#ff000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="1.0dip"
+            android:text="Phi Ship Tang"
+            android:textColor="#ff000000"
+            android:textStyle="bold"
+            />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="#FFFFFF"
+            android:gravity="center_horizontal"
+            android:padding="3dp">
+
+            <EditText
+                android:id="@+id/phishiptang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/color_edge_background"
+                android:gravity="right|center_vertical"
+                android:layout_weight="0.5"
+                android:padding="5dp"
+                android:textColor="#ff000000"
+                android:layout_marginLeft="10dp"
+                android:textSize="16.0sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="đ"
+                android:textSize="15sp"
+                android:textColor="#ff000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="#FFFFFF"
+            android:gravity="center_horizontal"
+            android:padding="3dp">
+
+            <TextView
+                android:id="@+id/txtcanthanhtoan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Cần Thanh Toán:"
+                android:textColor="#ff000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="đ"
+                android:textSize="15sp"
+                android:textColor="#ff000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|top"
+            android:text="@string/lablehinhthucthanhtoan"
+            android:textColor="#ff000000"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#FFFFFF"
+            android:gravity="center_horizontal"
+            android:padding="3dip">
+            <Spinner
+                android:id="@+id/spinhinhthanhtoan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/style_spinner"
+                android:entries="@array/hinhthuc_arrays"
+                android:gravity="center|left|top"
+                android:layout_weight="0.5"
+                android:prompt="@string/thanhtoanquatienmat"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left|top"
+                android:text=""
+                android:textColor="#ff000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sendaccess"
+            android:layout_gravity="center"
+            android:text="Gửi Xác Nhận"
+            android:textColor="@color/color_white"
+            android:background="@color/darkorange"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="150dp"/>
+
     </LinearLayout>
 </LinearLayout>

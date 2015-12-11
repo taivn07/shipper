@@ -24,12 +24,20 @@
         </activity>
 
         <activity
-            android:name="jp.shipper.app.acitivty.ChatActivity"
-            android:theme="@style/ChatTheme">
+            android:name="jp.shipper.app.acitivty.TabBarShipperActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity
+            android:name="jp.shipper.app.acitivty.ChatActivity"
+            android:theme="@style/ChatTheme">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
         </activity>
 
         <!--<activity android:name="jp.shipper.app.acitivty.TabBarAcitivity"/>-->

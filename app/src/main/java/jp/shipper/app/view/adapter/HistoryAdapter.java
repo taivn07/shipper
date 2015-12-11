@@ -105,6 +105,14 @@ public class HistoryAdapter extends BaseAdapter {
                 break;
             case LIST_ITEM_TYPE_2:
                 holder.viewFlipper.setDisplayedChild(1);
+                Button btngiaohang = (Button)convertView.findViewById(R.id.giaohang);
+                final LinearLayout llgiaohang = (LinearLayout) convertView.findViewById(R.id.ll_giaohang);
+                btngiaohang.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        llgiaohang.setVisibility(View.VISIBLE);
+                    }
+                });
                 break;
             case LIST_ITEM_TYPE_3:
                 holder.viewFlipper.setDisplayedChild(2);
