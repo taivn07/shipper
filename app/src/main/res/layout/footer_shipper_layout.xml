@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/header_bg"
+    android:background="@color/footer_ship_background"
     android:gravity="center"
     android:orientation="horizontal">
 
@@ -17,7 +17,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@android:drawable/ic_dialog_info" />
+            android:src="@drawable/ic_vandonmoi" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -37,12 +37,12 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@android:drawable/ic_dialog_info" />
+            android:src="@drawable/ic_history" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/tab_history" />
+            android:text="@string/tab_historyship" />
 
     </LinearLayout>
 
@@ -57,12 +57,12 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@android:drawable/ic_dialog_info" />
+            android:src="@drawable/ic_thongbao" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/tab_notification" />
+            android:text="@string/tab_notificationship" />
 
     </LinearLayout>
 
@@ -77,12 +77,12 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@android:drawable/ic_dialog_info" />
+            android:src="@drawable/ic_map" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/tab_map" />
+            android:text="@string/tab_mapship" />
 
     </LinearLayout>
 

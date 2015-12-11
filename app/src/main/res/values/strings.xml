@@ -20,8 +20,11 @@
     <string name="tab_create">Create</string>
     <string name="tab_vandonmoi">Vận đơn mới</string>
     <string name="tab_history">History</string>
+    <string name="tab_historyship">Lịch Sử</string>
     <string name="tab_notification">Notification</string>
+    <string name="tab_notificationship">Thông Báo</string>
     <string name="tab_map">Map</string>
+    <string name="tab_mapship">Bản Đồ</string>
 
     <string name="login_2_dang_nhap"> Đăng Nhập </string>
     <string name="login_2_quen_mat_khau"> Quên Mật Khẩu</string>

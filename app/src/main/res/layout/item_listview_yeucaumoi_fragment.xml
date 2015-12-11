@@ -28,12 +28,12 @@
 
             <RelativeLayout
             android:layout_width="fill_parent"
-            android:layout_height="150dp"
+            android:layout_height="wrap_content"
                 android:layout_weight="1">
             <TextView
                 android:id="@+id/informationshipper"
                 android:layout_width="fill_parent"
-                android:layout_height="120dp"
+                android:layout_height="110dp"
                 android:textColor="@color/blue"
                 android:background="@color/register_screen_background_textview"
                 android:text="cần người giao quần áo đi Xuân Thủy"/>
@@ -41,10 +41,10 @@
             <TextView
                 android:id="@+id/numbership"
                 android:layout_width="fill_parent"
-                android:layout_height="30dp"
+                android:layout_height="40dp"
                 android:layout_below="@id/informationshipper"
                 android:background="@color/register_screen_background_textview"
-                android:text="Có 10 shipper đã nhận được tin này"
+                android:text="Đã có 10 người nhận ship"
                 android:textColor="@color/red"
                 android:gravity="bottom"/>
         </RelativeLayout>
@@ -55,7 +55,7 @@
                 <TextView
                     android:id="@+id/khoangcach"
                     android:layout_width="fill_parent"
-                    android:layout_height="120dp"
+                    android:layout_height="110dp"
                     android:textColor="@color/color_white"
                     android:background="@color/register_screen_background_textview"
                     android:text="cách bạn 1km"
@@ -65,7 +65,7 @@
                 <TextView
                     android:id="@+id/date"
                     android:layout_width="fill_parent"
-                    android:layout_height="30dp"
+                    android:layout_height="40dp"
                     android:layout_below="@id/khoangcach"
                     android:background="@color/register_screen_background_textview"
                     android:text="11/12/2015"
