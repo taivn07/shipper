@@ -18,5 +18,6 @@ public class NotificationFragment extends TabBaseFragment{
 
         setHeaderTitle(getString(R.string.tab_notification));
         setCurrentMenu(0);
+        hideFooter();
     }
 }
