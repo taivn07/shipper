@@ -27,7 +27,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/edit_text_phone_number"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/margin_login_2" />
+        android:layout_marginTop="@dimen/margin_login_2"
+        android:password="true" />
 
     <Button
         android:id="@+id/button_dang_nhap_login_2"

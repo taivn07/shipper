@@ -7,7 +7,7 @@
     <dimen name="margin_top_on_login_screen_fragment_1"> 30dp </dimen>
     <dimen name="padding_on_login_screen_fragment_1"> 5dp</dimen>
     <dimen name="padding_on_loading_fragment_one"> 10dp </dimen>
-    <dimen name="margin_progress_bar_on_loading_fragment_one"> 30dp</dimen>
+    <dimen name="margin_progress_bar_on_loading_fragment_one"> 50dp</dimen>
     <dimen name="padding_on_login_fragment"> 20dp </dimen>
     <dimen name="width_view_login_2"> 280dp</dimen>
     <dimen name="margin_login_2"> 20dp </dimen>

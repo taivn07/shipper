@@ -13,11 +13,11 @@
         android:src="@drawable/homeship" />
 
     <TextView
-        android:layout_margin="@dimen/padding_on_login_screen_fragment_1"
         android:id="@+id/text_view_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/image_view_onLoginScreenFragment1"
+        android:layout_margin="@dimen/padding_on_login_screen_fragment_1"
         android:padding="@dimen/padding_on_login_screen_fragment_1"
         android:text="@string/ho_ten"
         android:textAlignment="center"
@@ -25,11 +25,11 @@
         android:textSize="@dimen/textsize_on_login_screen_fragment_1" />
 
     <TextView
-        android:layout_margin="@dimen/padding_on_login_screen_fragment_1"
         android:id="@+id/text_view_phonenumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/text_view_name"
+        android:layout_margin="@dimen/padding_on_login_screen_fragment_1"
         android:padding="@dimen/padding_on_login_screen_fragment_1"
         android:text="@string/so_dien_thoai"
         android:textAlignment="center"
@@ -37,21 +37,22 @@
         android:textSize="@dimen/textsize_on_login_screen_fragment_1" />
 
     <EditText
-        android:layout_margin="@dimen/padding_on_login_screen_fragment_1"
-        android:id="@+id/edit_text_password"
+        android:id="@+id/login_screen1_edit_text_password"
         android:layout_width="@dimen/width_dang_nhap_on_login_screen_fragment_1"
         android:layout_height="wrap_content"
         android:layout_below="@id/text_view_phonenumber"
         android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/padding_on_login_screen_fragment_1"
         android:hint="@string/nhap_mat_khau"
-        android:textSize="@dimen/textsize_on_login_screen_fragment_1"
-        android:padding="@dimen/padding_on_login_screen_fragment_1"/>
+        android:padding="@dimen/padding_on_login_screen_fragment_1"
+        android:password="true"
+        android:textSize="@dimen/textsize_on_login_screen_fragment_1" />
 
     <Button
         android:id="@+id/buttonLoginOnLoginScreenFragment1"
         android:layout_width="@dimen/width_dang_nhap_on_login_screen_fragment_1"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/edit_text_password"
+        android:layout_below="@+id/login_screen1_edit_text_password"
         android:layout_centerHorizontal="true"
         android:background="@drawable/button_background"
         android:padding="@dimen/padding_on_login_screen_fragment_1"

@@ -33,6 +33,7 @@
             android:textSize="@dimen/register_screen_text_size" />
 
         <EditText
+            android:id="@+id/register_screen_phonenumber"
             android:layout_width="@dimen/register_screen_width_view"
             android:layout_height="0dp"
             android:layout_marginTop="5dp"
@@ -46,11 +47,13 @@
             android:background="@color/background_loading_screen" />
 
         <EditText
+            android:id="@+id/register_screen_password"
             android:layout_width="@dimen/register_screen_width_view"
             android:layout_height="0dp"
             android:layout_marginTop="5dp"
             android:layout_weight="1"
             android:hint="@string/register_screen_mat_khau"
+            android:password="true"
             android:textSize="@dimen/register_screen_text_size" />
 
         <View
@@ -59,16 +62,19 @@
             android:background="@color/background_loading_screen" />
 
         <EditText
+            android:id="@+id/register_screen_confirm_password"
             android:layout_width="@dimen/register_screen_width_view"
             android:layout_height="0dp"
             android:layout_marginTop="5dp"
             android:layout_weight="1"
             android:hint="@string/register_screen_xac_nhan_mat_khau"
+            android:password="true"
             android:textSize="@dimen/register_screen_text_size" />
 
     </LinearLayout>
 
     <Button
+        android:id="@+id/register_screen_button_dangky"
         android:layout_width="@dimen/register_screen_width_view"
         android:layout_height="wrap_content"
         android:layout_below="@+id/register_screen_linearlayout"

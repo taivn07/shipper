@@ -7,6 +7,7 @@ import android.widget.Button;
 import jp.shipper.app.R;
 
 public class LoginFragment extends BaseFragment {
+    //luu trang thai dang nhap lan dau hoac lan thu 2:
 
     private Button mButtonLoginFacebook, mButtonLoginShipper;
 
@@ -28,7 +29,7 @@ public class LoginFragment extends BaseFragment {
         mButtonLoginShipper.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showFragmentAddToBackStack(new LoginScreenFragment1());
+                showFragmentAddToBackStack(new LoginScreenFragment2());
 
             }
         });
