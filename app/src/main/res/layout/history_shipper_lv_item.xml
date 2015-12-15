@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/history_shipper_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/history_shipper_grey"
+        android:clickable="false">
+
+        <RelativeLayout
+            android:id="@+id/history_shipper_relativelayout1"
+            android:layout_width="150dp"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:id="@+id/history_shipper_img_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true">
+
+
+                <ImageView
+                    android:id="@+id/history_shipper_img_shop"
+                    android:layout_width="82dp"
+                    android:layout_height="82dp"
+                    android:layout_above="@+id/item_history_shipper_nameshop"
+                    android:src="@drawable/img_user" />
+
+                <TextView
+                    android:id="@+id/item_history_shipper_nameshop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="NameShop" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/history_shipper_relativelayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/history_shipper_relativelayout1">
+
+            <TextView
+                android:id="@+id/item_history_senderAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="235 bach Mai Hai Ba Trung" />
+
+            <TextView
+                android:id="@+id/item_history_receiverAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_history_senderAddress"
+                android:text="Cau Giay Xuan Thuy" />
+
+            <TextView
+                android:id="@+id/item_history_thuho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_history_receiverAddress"
+                android:text="Thu Hộ: 300K" />
+
+            <TextView
+                android:id="@+id/item_history_phiship"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_history_thuho"
+                android:text="Thu Hộ: 300K" />
+
+            <TextView
+                android:id="@+id/history_shipper_yeucau"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="Yeu cau lay hang luc 15h"
+                android:textColor="@android:color/holo_red_dark" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_toRightOf="@+id/history_shipper_relativelayout2">
+
+            <TextView
+                android:id="@+id/item_history_shipper_khoangcach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cach ban 1 Km" />
+
+            <TextView
+
+                android:id="@+id/item_history_shipper_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="20 thang 11 2021" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/history_shipper_relativelayout"
+        android:background="@color/color_white"
+        android:weightSum="5">
+
+        <RelativeLayout
+            android:id="@+id/rl_chat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/history_shipper_img_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/img_chat" />
+
+            <TextView
+                android:id="@+id/history_shipper_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/history_shipper_img_1"
+                android:layout_centerHorizontal="true"
+                android:text="Chat" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_goi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/history_shipper_img_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/img_goi" />
+
+            <TextView
+                android:id="@+id/history_shipper_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/history_shipper_img_2"
+                android:layout_centerHorizontal="true"
+                android:text="Gọi" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_nhanhang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/history_shipper_img_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/img_nhanhang" />
+
+            <TextView
+                android:id="@+id/history_shipper_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/history_shipper_img_3"
+                android:layout_centerHorizontal="true"
+                android:text="Nhận Hàng" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_nguoinhan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/history_shipper_img_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/img_nguoinhan" />
+
+            <TextView
+                android:id="@+id/history_shipper_tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/history_shipper_img_4"
+                android:layout_centerHorizontal="true"
+                android:text="Người Nhận" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_huydon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/history_shipper_img_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/img_huydon" />
+
+            <TextView
+                android:id="@+id/history_shipper_tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/history_shipper_img_5"
+                android:layout_centerHorizontal="true"
+                android:text="Hủy Đơn" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_giaohang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/history_shipper_img_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/img_giaohang" />
+
+            <TextView
+                android:id="@+id/history_shipper_tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/history_shipper_img_6"
+                android:layout_centerHorizontal="true"
+                android:text="Giao Hàng" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_trahang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/history_shipper_img_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/img_huydon" />
+
+            <TextView
+                android:id="@+id/history_shipper_tv7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/history_shipper_img_7"
+                android:layout_centerHorizontal="true"
+                android:text="Trả Hàng" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_danhgia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/history_shipper_img_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/img_danhgia" />
+
+            <TextView
+                android:id="@+id/history_shipper_tv8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/history_shipper_img_8"
+                android:layout_centerHorizontal="true"
+                android:text="Đánh Giá" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_nhatky"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/history_shipper_img_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/img_nhatky" />
+
+            <TextView
+                android:id="@+id/history_shipper_tv9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/history_shipper_img_9"
+                android:layout_centerHorizontal="true"
+                android:text="Nhật Ký" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_huygiao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/history_shipper_img_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/img_huydon" />
+
+            <TextView
+                android:id="@+id/history_shipper_tv10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/history_shipper_img_10"
+                android:layout_centerHorizontal="true"
+                android:text="Hủy Giao" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -29,4 +29,6 @@
     <color name="toolbar_text_color">#F44336</color>
     <color name="btn_send_text_color">#0022ff</color>
     <color name="btn_send_text_color_clicked">#990022ff</color>
+
+    <color name="history_shipper_grey"> #ECEFF1 </color>
 </resources>

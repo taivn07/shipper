@@ -113,4 +113,8 @@
         <item>Thanh toán tiền mặt</item>
         <item>Thanh toán qua ví</item>
     </string-array>
+
+    <string name="history_shipper_dennhanhang"> Đến Nhận Hàng </string>
+    <string name="history_shipper_dangdigiao"> Đang Đi Giao </string>
+    <string name="history_shipper_dagiaohang"> Đã Giao Hàng</string>
 </resources>
