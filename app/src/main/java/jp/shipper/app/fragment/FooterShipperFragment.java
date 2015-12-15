@@ -60,11 +60,11 @@ public class FooterShipperFragment extends TabBaseShipperFragment implements Vie
                 break;
             case TAB_NOTIFICATION:
                 mCurrentTab = TAB_NOTIFICATION;
-                showFragment(new NotificationFragment());
+                showFragment(new ShipperNotification());
                 break;
             case TAB_MAP:
                 mCurrentTab = TAB_MAP;
-                showFragment(new MapAddressFragment());
+                showFragment(new MapAddressShipperFragment());
                 break;
             default:
                 mCurrentTab = index;

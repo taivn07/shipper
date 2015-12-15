@@ -13,7 +13,7 @@ import jp.shipper.app.view.item.ShipperNotificationItem;
 /**
  * Created by QuyTrongNguyen on 10/12/2015.
  */
-public class ShipperNotification extends BaseFragment {
+public class ShipperNotification extends BaseShipperFragment {
     private ListView mListView;
     private ArrayList<ShipperNotificationItem> mData;
     private ShipperNotificationAdapter mAdapter;
@@ -39,7 +39,7 @@ public class ShipperNotification extends BaseFragment {
         mAdapter = new ShipperNotificationAdapter(getActivity(), mData );
         mListView = ( ListView )view.findViewById(R.id.shipper_notification_listview);
         mListView.setAdapter(mAdapter);
-        showHeader();
-        setHeaderTitle("Thông Báo");
+//        showHeader();
+//        setHeaderTitle("Thông Báo");
     }
 }

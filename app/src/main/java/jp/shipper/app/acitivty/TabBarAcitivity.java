@@ -12,7 +12,6 @@ import android.widget.TextView;
 import jp.shipper.app.R;
 import jp.shipper.app.fragment.FooterFragment;
 import jp.shipper.app.fragment.GuideFragment;
-import jp.shipper.app.fragment.NotificationFragment;
 import jp.shipper.app.fragment.PersonalInfoFragment;
 
 public class TabBarAcitivity extends BaseActivity implements View.OnClickListener {
@@ -46,7 +45,7 @@ public class TabBarAcitivity extends BaseActivity implements View.OnClickListene
         findViewById(R.id.ll_personal_info).setOnClickListener(this);
 
         showFragmentFooter(mFooter);
-//        showFragment(new NotificationFragment());
+//        showFragment(new MerchantNotification());
     }
 
     public void showFragmentFooter(Fragment fragment){

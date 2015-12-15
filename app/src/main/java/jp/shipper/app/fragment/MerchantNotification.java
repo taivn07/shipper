@@ -41,7 +41,7 @@ public class MerchantNotification extends BaseFragment {
         mAdapter = new MerchantNotificationAdapter(getActivity(), mData );
         mListView = ( ListView )view.findViewById(R.id.merchant_notification_listview);
         mListView.setAdapter(mAdapter);
-        showHeader();
-        setHeaderTitle("Thông Báo");
+//        showHeader();
+//        setHeaderTitle("Thông Báo");
     }
 }

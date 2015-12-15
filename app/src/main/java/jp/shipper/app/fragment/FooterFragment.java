@@ -58,7 +58,7 @@ public class FooterFragment extends TabBaseFragment implements View.OnClickListe
                 break;
             case TAB_NOTIFICATION:
                 mCurrentTab = TAB_NOTIFICATION;
-                showFragment(new NotificationFragment());
+                showFragment(new MerchantNotification());
                 break;
             case TAB_MAP:
                 mCurrentTab = TAB_MAP;
