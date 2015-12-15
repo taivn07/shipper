@@ -111,6 +111,7 @@
     </RelativeLayout>
 
     <LinearLayout
+        android:id="@+id/linear_contain"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/history_shipper_relativelayout"
@@ -168,9 +169,10 @@
         <RelativeLayout
             android:id="@+id/rl_nhanhang"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_weight="1"
-            android:visibility="gone">
+            android:visibility="gone"
+            >
 
             <ImageView
                 android:id="@+id/history_shipper_img_3"
@@ -186,7 +188,10 @@
                 android:layout_alignParentBottom="true"
                 android:layout_below="@+id/history_shipper_img_3"
                 android:layout_centerHorizontal="true"
-                android:text="Nhận Hàng" />
+                android:text="Nhận Hàng"
+
+               />
+
         </RelativeLayout>
 
         <RelativeLayout
@@ -357,5 +362,186 @@
                 android:text="Hủy Giao" />
         </RelativeLayout>
     </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_NhanHangvaThanhToan"
+        android:layout_below="@+id/linear_contain"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/color_white"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Nhan Hang và Thanh Toan"
+            android:textColor="@color/header_bg"
+            android:textSize="15.0dip"
+            android:textStyle="bold"
+            />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:padding="3dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="Phai Thanh Toan"
+            android:textColor="#ff000000"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txtphithanhtoan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="190000"
+            android:textColor="@color/toolbar_text_color"
+            android:gravity="right"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:text="đ"
+            android:textColor="#ff000000"
+            android:paddingLeft="2dp"
+            android:textStyle="bold" />
+    </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:padding="3dp">
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:text="Phi Ship Nguoi ban tra"
+                android:textColor="#ff000000"
+                android:textStyle="bold"
+                android:drawableRight="@drawable/ic_usd"/>
+            <TextView
+                android:id="@+id/txtphishipnguoibantra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="190000"
+                android:textColor="#ff000000"
+                android:gravity="right"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="đ"
+                android:textColor="#ff000000"
+                android:paddingLeft="2dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:padding="3dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:text="Phi Nhan Sau"
+                android:textColor="#ff000000"
+                android:textStyle="bold"
+                android:drawableRight="@drawable/ic_phisau"/>
+            <TextView
+                android:id="@+id/txtphinhansau"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="190000"
+                android:textColor="#ff000000"
+                android:gravity="right"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="đ"
+                android:textColor="#ff000000"
+                android:paddingLeft="2dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:padding="3dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:text="Tien Hang"
+                android:textColor="#ff000000"
+                android:textStyle="bold"
+                android:drawableRight="@drawable/ic_money"/>
+            <TextView
+                android:id="@+id/txttienhang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="190000"
+                android:textColor="#ff000000"
+                android:gravity="right"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="đ"
+                android:textColor="#ff000000"
+                android:paddingLeft="2dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:padding="3dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="So du vi hien tai"
+                android:textColor="#ff000000"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/txtsoduvi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="190000"
+                android:textColor="@color/toolbar_text_color"
+                android:gravity="center"
+                android:textStyle="bold"
+               />
+        </LinearLayout>
+            <Button
+                android:layout_marginTop="15dp"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="Xác Nhận"
+                android:textColor="@color/color_white"
+                android:textStyle="bold"
+                android:background="@color/darkorange"
+                android:textSize="16sp"
+                android:layout_gravity="center"/>
+    </LinearLayout>
 </RelativeLayout>

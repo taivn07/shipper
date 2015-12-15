@@ -44,7 +44,7 @@ public class HistorryShipper extends BaseFragment {
         mAdapter = new HistoryGoShipperAdapter(getActivity(), mData);
         mListView.setAdapter(mAdapter);
         mAdapter.notifyDataSetChanged();
-        showHeader();
-        setHeaderTitle("Lịch Sử Vận Đơn");
+//        showHeader();
+//        setHeaderTitle("Lịch Sử Vận Đơn");
     }
 }

@@ -10,17 +10,40 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/edge_listview_cholayhang">
+        <RelativeLayout
+            android:id="@+id/history_shipper_relativelayout1"
+            android:layout_width="100dp"
+            android:layout_height="150dp">
 
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="150dp"
-            android:layout_weight="2.5"
-            android:background="@color/register_screen_background_textview"
+            <ImageView
+                android:id="@+id/history_shipper_img_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic" />
 
-            android:drawableLeft="@drawable/ic"
-            android:gravity="center"
-            android:text="date"
-            android:textSize="16dip"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true">
+
+
+                <ImageView
+                    android:id="@+id/history_shipper_img_shop"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_above="@+id/item_history_shipper_nameshop"
+                    android:src="@drawable/ic_people" />
+
+                <TextView
+                    android:id="@+id/item_history_shipper_nameshop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="NameShipper"
+                    android:paddingBottom="10dp"/>
+            </RelativeLayout>
+        </RelativeLayout>
 
         <LinearLayout
             android:layout_width="fill_parent"

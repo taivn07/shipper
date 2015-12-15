@@ -1,53 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="60.0dip"
-        android:layout_gravity="center_horizontal"
-        android:background="#EEEEEE"
-        android:gravity="center_horizontal" >
 
         <TextView
-            android:layout_width="40.0dip"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.0"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="0.25"
             android:gravity="left"
             android:paddingLeft="10.0dip"
             android:text="Bạn đang chọn"
             android:textColor="#ff000000"
             android:textSize="10.0dip"
             android:textStyle="bold" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="400dip" >
 
         <fragment
             android:id="@+id/map"
             android:name="com.google.android.gms.maps.MapFragment"
             android:layout_width="match_parent"
-            android:layout_height="400dip" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="80.0dip"
-        android:layout_gravity="center_horizontal"
-        android:background="#EEEEEE"
-        android:gravity="center_horizontal" >
-
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
         <Button
-            android:id="@+id/chooseandress"
-            android:layout_width="150.0dip"
-            android:layout_height="50.0dip"
+            android:id="@+id/btn_choose_address"
+            android:layout_width="150.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
             android:background="@drawable/btn_choosemappoint"
             android:padding="10dip"
-            android:paddingRight="50.0dip" />
-    </LinearLayout>
+            android:paddingRight="50.0dip"
+            />
 
 </LinearLayout>

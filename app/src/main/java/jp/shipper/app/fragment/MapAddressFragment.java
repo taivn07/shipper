@@ -1,10 +1,13 @@
 package jp.shipper.app.fragment;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 
 import jp.shipper.app.R;
 import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.model.Marker;
@@ -38,7 +41,7 @@ public class MapAddressFragment extends TabBaseFragment{
         }
 //		googleMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
         final LatLng Point = new LatLng(21 , 57);
-        Marker TP = googleMap.addMarker(new MarkerOptions().position(Point).title("choose address"));
+        Marker TP = googleMap.addMarker(new MarkerOptions().position(Point).title("choose address").icon(BitmapDescriptorFactory.fromResource(R.drawable.icon_pointer)));
     }
 
     @Override

@@ -46,7 +46,7 @@ public class TabBarAcitivity extends BaseActivity implements View.OnClickListene
         findViewById(R.id.ll_personal_info).setOnClickListener(this);
 
         showFragmentFooter(mFooter);
-        showFragment(new NotificationFragment());
+//        showFragment(new NotificationFragment());
     }
 
     public void showFragmentFooter(Fragment fragment){
