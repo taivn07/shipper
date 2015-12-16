@@ -44,6 +44,10 @@ public class HistoryShipFragment extends TabBaseFragment {
         ChoseItem choseItem2 = new ChoseItem();
         choseItem2.setTitle("chose item2");
         listChose.add(choseItem2);
+        //
+        ChoseItem choseItem3 = new ChoseItem();
+        choseItem3.setTitle("chose item3");
+        listChose.add(choseItem3);
 
         itemTimShip.setChoseItemList(listChose);
         listItem.add(itemTimShip);

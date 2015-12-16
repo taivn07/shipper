@@ -28,7 +28,13 @@ public class FooterFragment extends TabBaseFragment implements View.OnClickListe
         mRootView.findViewById(R.id.ll_notification).setOnClickListener(this);
         mRootView.findViewById(R.id.ll_map).setOnClickListener(this);
 
-        setCurrentTab(TAB_CREATE);
+        Bundle bundle=getArguments();
+        String fragmenthistory = bundle.getString("message");
+        int currenTab = TAB_CREATE;
+        if (null!= fragmenthistory && fragmenthistory.equals(HistoryShipFragment.class.getSimpleName())){
+            currenTab = TAB_HISTORY;
+        }
+        setCurrentTab(currenTab);
     }
 
     @Override
@@ -47,6 +53,8 @@ public class FooterFragment extends TabBaseFragment implements View.OnClickListe
     }
 
     public void setCurrentTab(int index){
+
+
         switch (index) {
             case TAB_CREATE:
                 mCurrentTab = TAB_CREATE;
@@ -54,7 +62,9 @@ public class FooterFragment extends TabBaseFragment implements View.OnClickListe
                 break;
             case TAB_HISTORY:
                 mCurrentTab = TAB_HISTORY;
+
                 showFragment(new HistoryShipFragment());
+
                 break;
             case TAB_NOTIFICATION:
                 mCurrentTab = TAB_NOTIFICATION;
