@@ -1,5 +1,6 @@
 package jp.shipper.app.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -9,6 +10,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import jp.shipper.app.R;
+import jp.shipper.app.acitivty.TabBarAcitivity;
+import jp.shipper.app.acitivty.TabBarShipperActivity;
 
 /**
  * Created by QuyTrongNguyen on 07/12/2015.
@@ -19,6 +22,8 @@ public class LoginScreenFragment2 extends BaseFragment {
     private Button mButtonLogin;
     private EditText mEditTextPhoneNumber;
     private EditText mEditTextPassword;
+    private Intent merchantIntent;
+    private Intent shipperIntent;
     private static final String MERCHANT = "0123456789";
     private static final String MERCHANTPASS = "123456";
 
@@ -57,13 +62,17 @@ public class LoginScreenFragment2 extends BaseFragment {
                 if (TextUtils.isEmpty(mEditTextPassword.getText().toString()) || TextUtils.isEmpty(mEditTextPhoneNumber.getText().toString())) {
                     Toast.makeText(getActivity(), "Bạn Phải Điền Đầy Đủ Thông Tin", Toast.LENGTH_LONG).show();
                 } else {
-                    if(checkMerchant(mEditTextPhoneNumber.getText().toString(), mEditTextPassword.getText().toString())){
+                    if (checkMerchant(mEditTextPhoneNumber.getText().toString(), mEditTextPassword.getText().toString())) {
                         // Nhảy vào chú merchant
-                        
-                    }else{
-                        if( checkShipper(mEditTextPhoneNumber.getText().toString(), mEditTextPassword.getText().toString())){
+                        merchantIntent = new Intent(getActivity(), TabBarAcitivity.class);
+                        getActivity().startActivity(merchantIntent);
+
+                    } else {
+                        if (checkShipper(mEditTextPhoneNumber.getText().toString(), mEditTextPassword.getText().toString())) {
                             // nhảy vào chú shipper
-                        }else{
+                            shipperIntent = new Intent(getActivity(), TabBarShipperActivity.class);
+                            getActivity().startActivity(shipperIntent);
+                        } else {
                             Toast.makeText(getActivity(), "Sai Tài Khoản Mật Khẩu", Toast.LENGTH_LONG).show();
                         }
                     }
