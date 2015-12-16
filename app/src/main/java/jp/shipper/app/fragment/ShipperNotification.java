@@ -13,7 +13,7 @@ import jp.shipper.app.view.item.ShipperNotificationItem;
 /**
  * Created by QuyTrongNguyen on 10/12/2015.
  */
-public class ShipperNotification extends BaseShipperFragment {
+public class ShipperNotification extends TabBaseShipperFragment {
     private ListView mListView;
     private ArrayList<ShipperNotificationItem> mData;
     private ShipperNotificationAdapter mAdapter;
@@ -36,6 +36,8 @@ public class ShipperNotification extends BaseShipperFragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        setHeaderTitle(getString(R.string.tab_notificationship));
+        setCurrentMenu(0);
         mAdapter = new ShipperNotificationAdapter(getActivity(), mData );
         mListView = ( ListView )view.findViewById(R.id.shipper_notification_listview);
         mListView.setAdapter(mAdapter);

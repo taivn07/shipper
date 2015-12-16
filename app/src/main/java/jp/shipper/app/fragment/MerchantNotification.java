@@ -15,7 +15,7 @@ import jp.shipper.app.view.item.ShipperNotificationItem;
 /**
  * Created by QuyTrongNguyen on 10/12/2015.
  */
-public class MerchantNotification extends BaseFragment {
+public class MerchantNotification extends TabBaseFragment {
     private ListView mListView;
     private ArrayList<MerchantNotificationItem> mData;
     private MerchantNotificationAdapter mAdapter;
@@ -38,6 +38,8 @@ public class MerchantNotification extends BaseFragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        setHeaderTitle(getString(R.string.tab_notification));
+        setCurrentMenu(0);
         mAdapter = new MerchantNotificationAdapter(getActivity(), mData );
         mListView = ( ListView )view.findViewById(R.id.merchant_notification_listview);
         mListView.setAdapter(mAdapter);

@@ -13,7 +13,7 @@ import jp.shipper.app.view.item.HistoryGoShipperItem;
 /**
  * Created by QuyTrongNguyen on 13/12/2015.
  */
-public class HistorryShipper extends BaseFragment {
+public class HistorryShipper extends TabBaseShipperFragment {
     private ListView mListView;
     HistoryGoShipperAdapter mAdapter;
     ArrayList<HistoryGoShipperItem> mData;
@@ -40,10 +40,13 @@ public class HistorryShipper extends BaseFragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        setHeaderTitle(getString(R.string.tab_historyship));
+        setCurrentMenu(0);
         mListView = ( ListView )view.findViewById(R.id.history_shipper_listview);
         mAdapter = new HistoryGoShipperAdapter(getActivity(), mData);
         mListView.setAdapter(mAdapter);
         mAdapter.notifyDataSetChanged();
+
 //        showHeader();
 //        setHeaderTitle("Lịch Sử Vận Đơn");
     }

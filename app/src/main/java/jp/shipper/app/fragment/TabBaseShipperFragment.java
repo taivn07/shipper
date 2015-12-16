@@ -7,7 +7,7 @@ import jp.shipper.app.acitivty.TabBarShipperActivity;
 /**
  * Created by PaditechPC1 on 12/11/2015.
  */
-public class TabBaseShipperFragment extends BaseFragment {
+public class TabBaseShipperFragment extends BaseShipperFragment {
     @Override
     public  int getLayout() {
         return 0;
