@@ -13,6 +13,7 @@ import jp.shipper.app.R;
 import jp.shipper.app.fragment.FooterFragment;
 import jp.shipper.app.fragment.GuideFragment;
 import jp.shipper.app.fragment.PersonalInfoFragment;
+import jp.shipper.app.fragment.ProfileEditScreen;
 
 public class TabBarAcitivity extends BaseActivity implements View.OnClickListener {
 
@@ -74,7 +75,7 @@ public class TabBarAcitivity extends BaseActivity implements View.OnClickListene
     public void showMenu(int index) {
         switch (index) {
             case MENU_PERSONAL_INFO:
-                showFragment(new PersonalInfoFragment());
+                showFragment(new ProfileEditScreen());
                 mFooter.setCurrentTab(0);
                 break;
             case MENU_GUIDE:

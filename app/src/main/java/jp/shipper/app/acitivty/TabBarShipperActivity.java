@@ -15,6 +15,7 @@ import jp.shipper.app.fragment.FooterFragment;
 import jp.shipper.app.fragment.FooterShipperFragment;
 import jp.shipper.app.fragment.GuideFragment;
 import jp.shipper.app.fragment.PersonalInfoFragment;
+import jp.shipper.app.fragment.ProfileEditScreen;
 
 /**
  * Created by PaditechPC1 on 12/11/2015.
@@ -64,7 +65,7 @@ public class TabBarShipperActivity extends BaseActivity implements View.OnClickL
     public void showMenu(int index) {
         switch (index) {
             case MENU_PERSONAL_INFO:
-                showFragment(new PersonalInfoFragment());
+                showFragment(new ProfileEditScreen());
                 mFooter.setCurrentTab(0);
                 break;
             case MENU_GUIDE:

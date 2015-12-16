@@ -35,7 +35,7 @@ public class ProfileEditScreen extends BaseFragment {
         adapterCity.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerDistrict.setAdapter(adapterDistrict);
         spinnerCity.setAdapter(adapterCity);
-        showHeader();
-        setHeaderTitle("đăng nhập");
+//        showHeader();
+//        setHeaderTitle("đăng nhập");
     }
 }
