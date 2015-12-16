@@ -3,6 +3,7 @@ package jp.shipper.app.view.adapter;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.annotation.RequiresPermission;
 import android.util.Log;
 import android.view.Gravity;
@@ -22,6 +23,8 @@ import android.widget.ViewFlipper;
 import java.util.ArrayList;
 
 import jp.shipper.app.R;
+import jp.shipper.app.acitivty.ChatActivity;
+import jp.shipper.app.acitivty.GiaoHangVaNhanTienActivity;
 import jp.shipper.app.view.item.HistoryItem;
 
 /**
@@ -62,7 +65,7 @@ public class HistoryAdapter extends BaseAdapter {
 
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(int position, View convertView, final ViewGroup parent) {
         ViewHolder holder;
 
         if (convertView == null) {
@@ -78,6 +81,7 @@ public class HistoryAdapter extends BaseAdapter {
         type = ((HistoryItem) getItem(position)).getType();
         switch (type) {
             case LIST_ITEM_TYPE_1:
+
                 holder.viewFlipper.setDisplayedChild(0);
                 Button btntimship = (Button) convertView.findViewById(R.id.chooseship);
                 final LinearLayout llChonShipper = (LinearLayout) convertView.findViewById(R.id.ll_chonshipper);
@@ -95,6 +99,7 @@ public class HistoryAdapter extends BaseAdapter {
 
                     }
                 });
+
                 btncancel.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -105,12 +110,22 @@ public class HistoryAdapter extends BaseAdapter {
                 break;
             case LIST_ITEM_TYPE_2:
                 holder.viewFlipper.setDisplayedChild(1);
-                Button btngiaohang = (Button)convertView.findViewById(R.id.giaohang);
-                final LinearLayout llgiaohang = (LinearLayout) convertView.findViewById(R.id.ll_giaohang);
+                Button btngiaohang = (Button)convertView.findViewById(R.id.btn_giaohang_cholayhang);
+//                final LinearLayout llgiaohang = (LinearLayout) convertView.findViewById(R.id.ll_giaohang);
                 btngiaohang.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        llgiaohang.setVisibility(View.VISIBLE);
+//                        llgiaohang.setVisibility(View.VISIBLE);
+                        Intent myIntentGiaohang = new Intent(context, GiaoHangVaNhanTienActivity.class);
+                        context.startActivity(myIntentGiaohang);
+                    }
+                });
+                Button btnchat =(Button)convertView.findViewById(R.id.btn_chat_cholayhang);
+                btnchat.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent myIntent = new Intent(context, ChatActivity.class);
+                        context.startActivity(myIntent);
                     }
                 });
                 break;

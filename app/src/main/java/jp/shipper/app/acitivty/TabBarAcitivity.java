@@ -43,8 +43,11 @@ public class TabBarAcitivity extends BaseActivity implements View.OnClickListene
 
         findViewById(R.id.ll_guide).setOnClickListener(this);
         findViewById(R.id.ll_personal_info).setOnClickListener(this);
-
+        Bundle bundle = new Bundle();
+        bundle.putString("message", getIntent().getStringExtra("message"));
+        mFooter.setArguments(bundle);
         showFragmentFooter(mFooter);
+
 //        showFragment(new MerchantNotification());
     }
 
