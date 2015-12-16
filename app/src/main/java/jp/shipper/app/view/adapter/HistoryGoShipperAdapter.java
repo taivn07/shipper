@@ -1,6 +1,10 @@
 package jp.shipper.app.view.adapter;
 
+import android.app.Activity;
+import android.app.FragmentManager;
 import android.content.Context;
+import android.support.v4.app.DialogFragment;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,15 +16,19 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import jp.shipper.app.R;
+import jp.shipper.app.fragment.DialogGiaoHangThanhCong;
+import jp.shipper.app.fragment.DialogsFragment;
+import jp.shipper.app.fragment.HuyDonDialogFragment;
 import jp.shipper.app.view.item.HistoryGoShipperItem;
 
 /**
  * Created by QuyTrongNguyen on 13/12/2015.
  */
 public class HistoryGoShipperAdapter extends BaseAdapter {
-    Context mContext;
+    public Context mContext;
     ArrayList<HistoryGoShipperItem> mData;
     ViewHolder holder;
+    FragmentManager fm;
     private static final int CHO_LAY_HANG = 1;
     private static final int NHAN_HANG = 2;
     private static final int DANG_DI_GIAO = 3;
@@ -32,6 +40,7 @@ public class HistoryGoShipperAdapter extends BaseAdapter {
         super();
         this.mContext = mContext;
         this.mData = mData;
+        fm =((Activity)mContext).getFragmentManager();
     }
 
     @Override
@@ -168,6 +177,30 @@ public class HistoryGoShipperAdapter extends BaseAdapter {
             holder.mTvKhoangCach.setText("Cách Bạn: " + mItem.getKhoangCach());
             holder.mTvDate.setText("Ngày Tháng: " + mItem.getDate());
         }
+
+        holder.Rl3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                DialogsFragment dialogFragment = new DialogsFragment();
+                dialogFragment.show( fm , "nhanhang");
+            }
+        });
+
+        holder.Rl6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DialogGiaoHangThanhCong dialogGiaoHangThanhCong = new DialogGiaoHangThanhCong();
+                dialogGiaoHangThanhCong.show(fm, "giaohangthanhcong");
+            }
+        });
+        holder.Rl5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                HuyDonDialogFragment huyDonDialogFragment = new HuyDonDialogFragment();
+                huyDonDialogFragment.show(fm, "huydon");
+            }
+        });
         return convertView;
     }
 
