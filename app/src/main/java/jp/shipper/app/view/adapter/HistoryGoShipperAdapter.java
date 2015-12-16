@@ -3,6 +3,7 @@ package jp.shipper.app.view.adapter;
 import android.app.Activity;
 import android.app.FragmentManager;
 import android.content.Context;
+import android.content.Intent;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
@@ -16,6 +17,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import jp.shipper.app.R;
+import jp.shipper.app.acitivty.ChatActivity;
 import jp.shipper.app.fragment.DialogGiaoHangThanhCong;
 import jp.shipper.app.fragment.DialogsFragment;
 import jp.shipper.app.fragment.HuyDonDialogFragment;
@@ -91,16 +93,16 @@ public class HistoryGoShipperAdapter extends BaseAdapter {
             holder.mTvKhoangCach = (TextView) convertView.findViewById(R.id.item_history_shipper_khoangcach);
             holder.mTvDate = (TextView) convertView.findViewById(R.id.item_history_shipper_date);
 
-            holder.Rl1 = (RelativeLayout) convertView.findViewById(R.id.rl_chat);
-            holder.Rl2 = (RelativeLayout) convertView.findViewById(R.id.rl_goi);
-            holder.Rl3 = (RelativeLayout) convertView.findViewById(R.id.rl_nhanhang);
-            holder.Rl4 = (RelativeLayout) convertView.findViewById(R.id.rl_nguoinhan);
-            holder.Rl5 = (RelativeLayout) convertView.findViewById(R.id.rl_huydon);
-            holder.Rl6 = (RelativeLayout) convertView.findViewById(R.id.rl_giaohang);
-            holder.Rl7 = (RelativeLayout) convertView.findViewById(R.id.rl_trahang);
-            holder.Rl8 = (RelativeLayout) convertView.findViewById(R.id.rl_danhgia);
-            holder.RL9 = (RelativeLayout) convertView.findViewById(R.id.rl_nhatky);
-            holder.Rl10 = ( RelativeLayout )convertView.findViewById(R.id.rl_huygiao);
+            holder.Rl1_chat = (RelativeLayout) convertView.findViewById(R.id.rl_chat);
+            holder.Rl2_goi = (RelativeLayout) convertView.findViewById(R.id.rl_goi);
+            holder.Rl3_nhanhang = (RelativeLayout) convertView.findViewById(R.id.rl_nhanhang);
+            holder.Rl4_nguoinhan = (RelativeLayout) convertView.findViewById(R.id.rl_nguoinhan);
+            holder.Rl5_huydon = (RelativeLayout) convertView.findViewById(R.id.rl_huydon);
+            holder.Rl6_giaohang = (RelativeLayout) convertView.findViewById(R.id.rl_giaohang);
+            holder.Rl7_trahang = (RelativeLayout) convertView.findViewById(R.id.rl_trahang);
+            holder.Rl8_danhgia = (RelativeLayout) convertView.findViewById(R.id.rl_danhgia);
+            holder.RL9_nhatky = (RelativeLayout) convertView.findViewById(R.id.rl_nhatky);
+            holder.Rl10_huygiao = ( RelativeLayout )convertView.findViewById(R.id.rl_huygiao);
 
 
             convertView.setTag(holder);
@@ -117,20 +119,20 @@ public class HistoryGoShipperAdapter extends BaseAdapter {
                     // set image status cho lay hang
 
                     holder.mImageViewStatus.setImageResource(R.drawable.ic_homeship);
-                    holder.Rl6.setVisibility(View.GONE);
-                    holder.Rl7.setVisibility(View.GONE);
-                    holder.Rl8.setVisibility(View.GONE);
-                    holder.RL9.setVisibility(View.GONE);
-                    holder.Rl10.setVisibility(View.GONE);
+                    holder.Rl6_giaohang.setVisibility(View.GONE);
+                    holder.Rl7_trahang.setVisibility(View.GONE);
+                    holder.Rl8_danhgia.setVisibility(View.GONE);
+                    holder.RL9_nhatky.setVisibility(View.GONE);
+                    holder.Rl10_huygiao.setVisibility(View.GONE);
                     break;
                 case NHAN_HANG:
                     // set image status nhan hang
                     holder.mImageViewStatus.setImageResource(R.drawable.ic_homeship);
-                    holder.Rl6.setVisibility(View.GONE);
-                    holder.Rl7.setVisibility(View.GONE);
-                    holder.Rl8.setVisibility(View.GONE);
-                    holder.RL9.setVisibility(View.GONE);
-                    holder.Rl10.setVisibility(View.GONE);
+                    holder.Rl6_giaohang.setVisibility(View.GONE);
+                    holder.Rl7_trahang.setVisibility(View.GONE);
+                    holder.Rl8_danhgia.setVisibility(View.GONE);
+                    holder.RL9_nhatky.setVisibility(View.GONE);
+                    holder.Rl10_huygiao.setVisibility(View.GONE);
 
 
                     break;
@@ -138,29 +140,29 @@ public class HistoryGoShipperAdapter extends BaseAdapter {
                     // set image status dang di giao
 
                     holder.mImageViewStatus.setImageResource(R.drawable.ic_homeship);
-                    holder.Rl3.setVisibility(View.GONE);
-                    holder.Rl5.setVisibility(View.GONE);
-                    holder.Rl8.setVisibility(View.GONE);
-                    holder.RL9.setVisibility(View.GONE);
-                    holder.Rl10.setVisibility(View.GONE);
+                    holder.Rl3_nhanhang.setVisibility(View.GONE);
+                    holder.Rl5_huydon.setVisibility(View.GONE);
+                    holder.Rl8_danhgia.setVisibility(View.GONE);
+                    holder.RL9_nhatky.setVisibility(View.GONE);
+                    holder.Rl10_huygiao.setVisibility(View.GONE);
                     break;
                 case DA_GIAO_HANG:
                     // set image status cho da giao hang
 
-                    holder.Rl3.setVisibility(View.GONE);
-                    holder.Rl6.setVisibility(View.GONE);
-                    holder.Rl7.setVisibility(View.GONE);
-                    holder.Rl5.setVisibility(View.GONE);
-                    holder.Rl10.setVisibility(View.GONE);
+                    holder.Rl3_nhanhang.setVisibility(View.GONE);
+                    holder.Rl6_giaohang.setVisibility(View.GONE);
+                    holder.Rl7_trahang.setVisibility(View.GONE);
+                    holder.Rl5_huydon.setVisibility(View.GONE);
+                    holder.Rl10_huygiao.setVisibility(View.GONE);
                     holder.mImageViewStatus.setImageResource(R.drawable.ic_homeship);
                     break;
                 case HANG_TRA_LAI:
                     // set image status cho hang tra lai
-                    holder.Rl3.setVisibility(View.GONE);
-                    holder.Rl5.setVisibility(View.GONE);
-                    holder.Rl6.setVisibility(View.GONE);
-                    holder.Rl8.setVisibility(View.GONE);
-                    holder.RL9.setVisibility(View.GONE);
+                    holder.Rl3_nhanhang.setVisibility(View.GONE);
+                    holder.Rl5_huydon.setVisibility(View.GONE);
+                    holder.Rl6_giaohang.setVisibility(View.GONE);
+                    holder.Rl8_danhgia.setVisibility(View.GONE);
+                    holder.RL9_nhatky.setVisibility(View.GONE);
                     holder.mImageViewStatus.setImageResource(R.drawable.ic_homeship);
                     break;
                 default:
@@ -178,7 +180,7 @@ public class HistoryGoShipperAdapter extends BaseAdapter {
             holder.mTvDate.setText("Ngày Tháng: " + mItem.getDate());
         }
 
-        holder.Rl3.setOnClickListener(new View.OnClickListener() {
+        holder.Rl3_nhanhang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -187,34 +189,41 @@ public class HistoryGoShipperAdapter extends BaseAdapter {
             }
         });
 
-        holder.Rl6.setOnClickListener(new View.OnClickListener() {
+        holder.Rl6_giaohang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 DialogGiaoHangThanhCong dialogGiaoHangThanhCong = new DialogGiaoHangThanhCong();
                 dialogGiaoHangThanhCong.show(fm, "giaohangthanhcong");
             }
         });
-        holder.Rl5.setOnClickListener(new View.OnClickListener() {
+        holder.Rl5_huydon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 HuyDonDialogFragment huyDonDialogFragment = new HuyDonDialogFragment();
                 huyDonDialogFragment.show(fm, "huydon");
             }
         });
+        holder.Rl1_chat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mContext, ChatActivity.class);
+                mContext.startActivity(intent);
+            }
+        });
         return convertView;
     }
 
     private void setViewVisibile() {
-        holder.Rl1.setVisibility(View.VISIBLE);
-        holder.Rl2.setVisibility(View.VISIBLE);
-        holder.Rl3.setVisibility(View.VISIBLE);
-        holder.Rl4.setVisibility(View.VISIBLE);
-        holder.Rl5.setVisibility(View.VISIBLE);
-        holder.Rl6.setVisibility(View.VISIBLE);
-        holder.Rl7.setVisibility(View.VISIBLE);
-        holder.Rl8.setVisibility(View.VISIBLE);
-        holder.RL9.setVisibility(View.VISIBLE);
-        holder.Rl10.setVisibility(View.VISIBLE);
+        holder.Rl1_chat.setVisibility(View.VISIBLE);
+        holder.Rl2_goi.setVisibility(View.VISIBLE);
+        holder.Rl3_nhanhang.setVisibility(View.VISIBLE);
+        holder.Rl4_nguoinhan.setVisibility(View.VISIBLE);
+        holder.Rl5_huydon.setVisibility(View.VISIBLE);
+        holder.Rl6_giaohang.setVisibility(View.VISIBLE);
+        holder.Rl7_trahang.setVisibility(View.VISIBLE);
+        holder.Rl8_danhgia.setVisibility(View.VISIBLE);
+        holder.RL9_nhatky.setVisibility(View.VISIBLE);
+        holder.Rl10_huygiao.setVisibility(View.VISIBLE);
     }
 
 
@@ -224,6 +233,7 @@ public class HistoryGoShipperAdapter extends BaseAdapter {
         TextView mTv1, mTv2, mTv3, mTv4, mTv5, mTvNameShop, mTvSenderAdd,
                 mTvReceiverAdd, mTvThuHo, mTvPhiShip, mTvYeuCau, mTvKhoangCach, mTvDate;
         ImageView mImgShop;
-        RelativeLayout Rl1, Rl2, Rl3, Rl4, Rl5, Rl6, Rl7, Rl8, RL9, Rl10;
+        RelativeLayout Rl1_chat, Rl2_goi, Rl3_nhanhang, Rl4_nguoinhan, Rl5_huydon, Rl6_giaohang, Rl7_trahang, Rl8_danhgia, RL9_nhatky, Rl10_huygiao;
     }
+
 }
