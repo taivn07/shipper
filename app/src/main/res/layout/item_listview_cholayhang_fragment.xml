@@ -19,7 +19,7 @@
                 android:id="@+id/history_shipper_img_status"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic" />
+                android:src="@drawable/img_cholayhang" />
 
             <RelativeLayout
                 android:layout_width="wrap_content"

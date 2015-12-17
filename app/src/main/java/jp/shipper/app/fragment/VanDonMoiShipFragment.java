@@ -47,7 +47,7 @@ public class VanDonMoiShipFragment extends TabBaseShipperFragment {
         lvwaitrecevership = (ListView) mRootView.findViewById(R.id.lvwaitrecevership);
         ArrayList<YeuCauMoiItem> listItemyeucaumoi = new ArrayList<>();
         YeuCauMoiItem itemYeuCauMoi = new YeuCauMoiItem();
-        itemYeuCauMoi.setType(YeuCauMoiItem.TYPE_YEUCAUMOi);
+//        itemYeuCauMoi.setType(YeuCauMoiItem.TYPE_YEUCAUMOi);
 
         YeuCauMoiItem itemYeuCauMoi1 = new YeuCauMoiItem();
         YeuCauMoiItem itemYeuCauMoi2 = new YeuCauMoiItem();
