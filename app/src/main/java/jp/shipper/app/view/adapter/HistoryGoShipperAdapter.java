@@ -4,8 +4,6 @@ import android.app.Activity;
 import android.app.FragmentManager;
 import android.content.Context;
 import android.content.Intent;
-import android.support.v4.app.DialogFragment;
-import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,7 +40,7 @@ public class HistoryGoShipperAdapter extends BaseAdapter {
         super();
         this.mContext = mContext;
         this.mData = mData;
-        fm =((Activity)mContext).getFragmentManager();
+        fm = ((Activity) mContext).getFragmentManager();
     }
 
     @Override
@@ -102,7 +100,7 @@ public class HistoryGoShipperAdapter extends BaseAdapter {
             holder.Rl7_trahang = (RelativeLayout) convertView.findViewById(R.id.rl_trahang);
             holder.Rl8_danhgia = (RelativeLayout) convertView.findViewById(R.id.rl_danhgia);
             holder.RL9_nhatky = (RelativeLayout) convertView.findViewById(R.id.rl_nhatky);
-            holder.Rl10_huygiao = ( RelativeLayout )convertView.findViewById(R.id.rl_huygiao);
+            holder.Rl10_huygiao = (RelativeLayout) convertView.findViewById(R.id.rl_huygiao);
 
 
             convertView.setTag(holder);
@@ -118,7 +116,7 @@ public class HistoryGoShipperAdapter extends BaseAdapter {
                 case CHO_LAY_HANG:
                     // set image status cho lay hang
 
-                    holder.mImageViewStatus.setImageResource(R.drawable.ic_homeship);
+                    holder.mImageViewStatus.setImageResource(R.drawable.dangdigiao);
                     holder.Rl6_giaohang.setVisibility(View.GONE);
                     holder.Rl7_trahang.setVisibility(View.GONE);
                     holder.Rl8_danhgia.setVisibility(View.GONE);
@@ -127,7 +125,7 @@ public class HistoryGoShipperAdapter extends BaseAdapter {
                     break;
                 case NHAN_HANG:
                     // set image status nhan hang
-                    holder.mImageViewStatus.setImageResource(R.drawable.ic_homeship);
+                    holder.mImageViewStatus.setImageResource(R.drawable.dagiaohang);
                     holder.Rl6_giaohang.setVisibility(View.GONE);
                     holder.Rl7_trahang.setVisibility(View.GONE);
                     holder.Rl8_danhgia.setVisibility(View.GONE);
@@ -139,7 +137,7 @@ public class HistoryGoShipperAdapter extends BaseAdapter {
                 case DANG_DI_GIAO:
                     // set image status dang di giao
 
-                    holder.mImageViewStatus.setImageResource(R.drawable.ic_homeship);
+                    holder.mImageViewStatus.setImageResource(R.drawable.img_tralai);
                     holder.Rl3_nhanhang.setVisibility(View.GONE);
                     holder.Rl5_huydon.setVisibility(View.GONE);
                     holder.Rl8_danhgia.setVisibility(View.GONE);
@@ -154,7 +152,7 @@ public class HistoryGoShipperAdapter extends BaseAdapter {
                     holder.Rl7_trahang.setVisibility(View.GONE);
                     holder.Rl5_huydon.setVisibility(View.GONE);
                     holder.Rl10_huygiao.setVisibility(View.GONE);
-                    holder.mImageViewStatus.setImageResource(R.drawable.ic_homeship);
+                    holder.mImageViewStatus.setImageResource(R.drawable.img_cholayhang);
                     break;
                 case HANG_TRA_LAI:
                     // set image status cho hang tra lai
@@ -163,7 +161,7 @@ public class HistoryGoShipperAdapter extends BaseAdapter {
                     holder.Rl6_giaohang.setVisibility(View.GONE);
                     holder.Rl8_danhgia.setVisibility(View.GONE);
                     holder.RL9_nhatky.setVisibility(View.GONE);
-                    holder.mImageViewStatus.setImageResource(R.drawable.ic_homeship);
+                    holder.mImageViewStatus.setImageResource(R.drawable.img_nhanlaihang);
                     break;
                 default:
                     break;
@@ -185,7 +183,7 @@ public class HistoryGoShipperAdapter extends BaseAdapter {
             public void onClick(View v) {
 
                 DialogsFragment dialogFragment = new DialogsFragment();
-                dialogFragment.show( fm , "nhanhang");
+                dialogFragment.show(fm, "nhanhang");
             }
         });
 

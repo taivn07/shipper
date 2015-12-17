@@ -43,8 +43,8 @@ public class MainActivity extends BaseActivity {
         findViewById(R.id.frame_header).setVisibility(View.VISIBLE);
     }
 
-    public void setHeaderTitle(String title){
-        ((TextView)findViewById(R.id.textview_header)).setText(title);
+    public void setHeaderTitle(String title) {
+        ((TextView) findViewById(R.id.textview_header)).setText(title);
     }
 
     public void hideHeader() {
@@ -53,7 +53,9 @@ public class MainActivity extends BaseActivity {
 
     public static void hideSoftKeyboard(Activity activity) {
         InputMethodManager inputMethodManager = (InputMethodManager) activity.getSystemService(Activity.INPUT_METHOD_SERVICE);
-        inputMethodManager.hideSoftInputFromWindow(activity.getCurrentFocus().getWindowToken(), 0);
+        if (activity.getCurrentFocus() != null) {
+            inputMethodManager.hideSoftInputFromWindow(activity.getCurrentFocus().getWindowToken(), 0);
+        }
     }
 
     public void setupUI(View view) {

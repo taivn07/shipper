@@ -12,6 +12,7 @@
         android:weightSum="3">
 
         <Button
+            android:id="@+id/button_den_nhan_hang"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="1dp"
@@ -22,6 +23,7 @@
             android:textSize="16sp" />
 
         <Button
+            android:id="@+id/button_dang_di_giao"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="1dp"
@@ -32,6 +34,7 @@
             android:textSize="16sp" />
 
         <Button
+            android:id="@+id/button_da_giao_hang"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
