@@ -57,6 +57,10 @@ public class HistoryGoShipperAdapter extends BaseAdapter {
     public long getItemId(int position) {
         return position;
     }
+    public void setData(ArrayList<HistoryGoShipperItem> m ){
+        this.mData = m;
+        notifyDataSetChanged();
+    }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
@@ -116,7 +120,7 @@ public class HistoryGoShipperAdapter extends BaseAdapter {
                 case CHO_LAY_HANG:
                     // set image status cho lay hang
 
-                    holder.mImageViewStatus.setImageResource(R.drawable.dangdigiao);
+                    holder.mImageViewStatus.setImageResource(R.drawable.img_cholayhang);
                     holder.Rl6_giaohang.setVisibility(View.GONE);
                     holder.Rl7_trahang.setVisibility(View.GONE);
                     holder.Rl8_danhgia.setVisibility(View.GONE);
@@ -125,7 +129,7 @@ public class HistoryGoShipperAdapter extends BaseAdapter {
                     break;
                 case NHAN_HANG:
                     // set image status nhan hang
-                    holder.mImageViewStatus.setImageResource(R.drawable.dagiaohang);
+                    holder.mImageViewStatus.setImageResource(R.drawable.img_nhanlaihang);
                     holder.Rl6_giaohang.setVisibility(View.GONE);
                     holder.Rl7_trahang.setVisibility(View.GONE);
                     holder.Rl8_danhgia.setVisibility(View.GONE);
@@ -137,7 +141,7 @@ public class HistoryGoShipperAdapter extends BaseAdapter {
                 case DANG_DI_GIAO:
                     // set image status dang di giao
 
-                    holder.mImageViewStatus.setImageResource(R.drawable.img_tralai);
+                    holder.mImageViewStatus.setImageResource(R.drawable.dangdigiao);
                     holder.Rl3_nhanhang.setVisibility(View.GONE);
                     holder.Rl5_huydon.setVisibility(View.GONE);
                     holder.Rl8_danhgia.setVisibility(View.GONE);
@@ -152,7 +156,7 @@ public class HistoryGoShipperAdapter extends BaseAdapter {
                     holder.Rl7_trahang.setVisibility(View.GONE);
                     holder.Rl5_huydon.setVisibility(View.GONE);
                     holder.Rl10_huygiao.setVisibility(View.GONE);
-                    holder.mImageViewStatus.setImageResource(R.drawable.img_cholayhang);
+                    holder.mImageViewStatus.setImageResource(R.drawable.dagiaohang);
                     break;
                 case HANG_TRA_LAI:
                     // set image status cho hang tra lai
@@ -161,7 +165,7 @@ public class HistoryGoShipperAdapter extends BaseAdapter {
                     holder.Rl6_giaohang.setVisibility(View.GONE);
                     holder.Rl8_danhgia.setVisibility(View.GONE);
                     holder.RL9_nhatky.setVisibility(View.GONE);
-                    holder.mImageViewStatus.setImageResource(R.drawable.img_nhanlaihang);
+                    holder.mImageViewStatus.setImageResource(R.drawable.img_tralai);
                     break;
                 default:
                     break;
