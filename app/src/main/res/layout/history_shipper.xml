@@ -12,32 +12,35 @@
         android:weightSum="3">
 
         <Button
+            android:id="@+id/button_den_nhan_hang"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="1dp"
             android:layout_weight="1"
-            android:background="@color/blue"
+            android:background="#699cfc"
             android:text="@string/history_shipper_dennhanhang"
             android:textColor="@color/color_white"
             android:textSize="16sp" />
 
         <Button
+            android:id="@+id/button_dang_di_giao"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="1dp"
             android:layout_weight="1"
-            android:background="@color/blue"
+            android:background="#fd9927"
             android:text="@string/history_shipper_dangdigiao"
             android:textColor="@color/color_white"
             android:textSize="16sp" />
 
         <Button
+            android:id="@+id/button_da_giao_hang"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@color/blue"
+            android:background="@color/color_white"
             android:text="@string/history_shipper_dagiaohang"
-            android:textColor="@color/color_white"
+            android:textColor="@color/blue"
             android:textSize="16sp" />
     </LinearLayout>
 

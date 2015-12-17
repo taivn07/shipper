@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/image_view_logo_inLoginFragment"
         android:layout_marginTop="@dimen/padding_on_login_fragment"
-        android:background="@drawable/button"
+        android:background="#2247cf"
         android:padding="@dimen/padding_on_login_fragment"
         android:text="@string/dang_nhap_facebook"
         android:textColor="@color/color_white"
@@ -40,18 +40,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/textview"
-        android:background="@drawable/button_background"
+        android:background="#dd7806"
         android:padding="@dimen/padding_on_login_fragment"
         android:text="@string/dang_nhap_shipper"
         android:textColor="@color/color_white"
         android:textSize="@dimen/textsize_17" />
 
-    <ProgressBar
-        android:layout_below="@id/buttonLoginShipper"
-        android:id="@+id/progressBar"
+    <ImageView
+        android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp" />
+        android:layout_marginBottom="42dp"
+        android:src="@drawable/img_loading" />
+
 
 </RelativeLayout>

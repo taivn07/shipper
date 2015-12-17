@@ -2,14 +2,14 @@
     <string name="app_name">Shipper</string>
     <string name="action_settings">Settings</string>
     <string name="home"> Home </string>
-    <string name="ship_hang"> Ship Hàng </string>
+    <string name="ship_hang"> SHIP HÀNG </string>
     <string name="ship_tim_nguoi_nguoi_tim_ship"> Ship tìm người - Người tìm ship </string>
-    <string name="ship_qua_vat"> Ship quà vặt </string>
+    <string name="ship_qua_vat"> SHIP QUÀ VẶT </string>
     <string name="the_gioi_qua_vat"> Thế giới quà vặt 24/7 </string>
     <string name="ship_tim_nguoi"> Ship tìm người </string>
     <string name="nguoi_tim_ship"> Người tìm ship </string>
     <string name="dang_nhap_facebook"> Đăng nhập bằng tài khoản Facebook </string>
-    <string name="dang_nhap_shipper"> Đăng nhập bằng tài khoản Shipper </string>
+    <string name="dang_nhap_shipper"> Bằng tài khoản Shipper </string>
     <string name="hoac"> Hoặc </string>
     <string name="ho_ten"> Nguyễn Trọng Quý </string>\
     <string name="so_dien_thoai"> 1234567890 </string>
@@ -29,7 +29,7 @@
     <string name="login_2_dang_nhap"> Đăng Nhập </string>
     <string name="login_2_quen_mat_khau"> Quên Mật Khẩu</string>
     <string name="login_2_dang_ky"> Đăng Ký </string>
-    
+
     <string-array name="profile_edit_screen_quan">
         <item> Ba Đình </item>
         <item> Cầu Giấy </item>
@@ -43,7 +43,7 @@
         <item> Hồ Chí Minh </item>
         <item> Long Biên </item>
     </string-array>
-    
+
     <string name="profile_edit_screen_name">Tuyên</string>
     <string name="profile_edit_screen_phone_number"> 012345678 </string>
     <string name="profile_edit_screen_address"> Lê Hồng Phong - Ba Đình - Hà Nội </string>
@@ -56,16 +56,16 @@
 
     <string name="share_app_screen_text1">Mỗi Chia Sẻ thành công, bạn sẽ nhận được 10.000 VND của chương trình gửi đến tài khoản của bạn. Mỗi người bạn của bạn sử dụng mã chia sẻ, bạn nhận được 30. 000 VND. Cảm ơn bạn đã giúp chúng tôi chia sẻ ứng dụng này. ^^</string>
     <string name="share_app_screen_share_facebook">Chia Sẻ Trên Facebook</string>
-    <string name="share_app_screen"> Thêm nội dung chia sẻ...</string>
-    <string name="share_app_screen_noidung">Ứng dụng này tuyệt lắm. ^^</string>
+    <string name="share_app_screen"> Thêm nội dung chia sẻ của bạn</string>
+    <string name="share_app_screen_noidung">Các bạn ơi, dùng cái này hay lắm nhé</string>
     <string name="share_app_screen_mota"> Nhận ngay 30.000 khi cài đặt và sử dụng ứng dụng </string>
     <string name="share_app_screen_makm"> Mã Khuyến Mại PICO </string>
     <string name="share_app_screen_facebook"> http://facebook.com/homeship </string>
     <string name="share_app_screen_chiase"> Chia Sẻ </string>
 
-    <string name="friend_invite_screen_moi_ban_qua_facebook"> Mời bạn Bè Qua Facebook</string>
-    <string name="friend_invite_screen_moi_ban_qua_homeship"> Mời bạn bè qua HomeShip</string>
-    <string name="friend_invite_screen_moi_ban_qua_danhba"> Mời bạn qua danh bạ</string>
+    <string name="friend_invite_screen_moi_ban_qua_facebook">Mời Kết Bạn Trên Facebook</string>
+    <string name="friend_invite_screen_moi_ban_qua_homeship"> Mời Bạn Đang Dùng HomeShip</string>
+    <string name="friend_invite_screen_moi_ban_qua_danhba"> Mời bạn trong danh bạ của bạn</string>
 
     <string name="enter_otp_xac_nhan_ma_dang_ky">Xác Nhận Mã Đăng Ký </string>
     <string name="enter_otp__nhap_ma_xac_nhan">Nhập Mã Gửi Qua Số Điện Thoại Của Bạn </string>

@@ -6,7 +6,7 @@
     <color name="header_bg">#fd6721</color>
     <color name="background_loading_screen">#F4E3CF</color>
     <color name="color_white"> #FFFFFF</color>
-    <color name="profile_color_view"> #FFAB40 </color>
+    <color name="profile_color_view"> #f4e3cf </color>
     <color name="friend_invite_screen_backgroun_linear_layout">#f9f1e7</color>
     <color name="register_screen_background_textview">#BDBDBD</color>
     <color name="friend_invite_background">#fbf4ed</color>

@@ -11,11 +11,14 @@
         android:layout_marginTop="10dp"
         android:src="@drawable/homeship" />
 
-    <ProgressBar
-        android:layout_marginBottom="60dp"
+    <ImageView
+        android:src="@drawable/img_loading"
         android:layout_width="wrap_content"
-        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
         android:layout_alignParentBottom="true"
-        android:layout_height="wrap_content" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="65dp" />
+
 
 </RelativeLayout>

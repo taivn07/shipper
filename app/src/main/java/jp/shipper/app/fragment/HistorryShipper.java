@@ -2,6 +2,7 @@ package jp.shipper.app.fragment;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -17,15 +18,27 @@ public class HistorryShipper extends TabBaseShipperFragment {
     private ListView mListView;
     HistoryGoShipperAdapter mAdapter;
     ArrayList<HistoryGoShipperItem> mData;
+    private Button buttonNhanHang, buttonDiGiaoHang, buttonDaGiaoHang;
+    ArrayList<HistoryGoShipperItem> mDataDaGiaoHang, mDataDiGiaoHang;
 
-    public HistorryShipper(){
+    public HistorryShipper() {
         mData = new ArrayList<HistoryGoShipperItem>();
-        HistoryGoShipperItem mTemp;
-        for( int i = 0; i < 10; i ++ ){
-            mTemp = new HistoryGoShipperItem( i % 5 + 1, "tên shop " + i, + i, i, "addressReceiver " + i, "addressSender " + i , i, i , "Yeu câu " + i, "Khoảng cách " + i, "Date " + i);
+        mDataDaGiaoHang = new ArrayList<HistoryGoShipperItem>();
+        mDataDiGiaoHang = new ArrayList<HistoryGoShipperItem>();
+        HistoryGoShipperItem mTemp, mTempNhanHang, mTempDiGiaoHang;
+
+        for (int i = 0; i < 10; i++) {
+            mTemp = new HistoryGoShipperItem(i % 5 + 1, "tên shop " + i, +i, i, "addressReceiver " + i, "addressSender " + i, i, i, "Yeu câu " + i, "Khoảng cách " + i, "Date " + i);
             mData.add(mTemp);
+            //mTemp.setStatus(2);
+            mTempNhanHang = new HistoryGoShipperItem(2, "tên shop " + i, +i, i, "addressReceiver " + i, "addressSender " + i, i, i, "Yeu câu " + i, "Khoảng cách " + i, "Date " + i);
+            mDataDaGiaoHang.add(mTempNhanHang);
+
+            mTempDiGiaoHang = new HistoryGoShipperItem(3, "tên shop " + i, +i, i, "addressReceiver " + i, "addressSender " + i, i, i, "Yeu câu " + i, "Khoảng cách " + i, "Date " + i);
+            mDataDiGiaoHang.add(mTempDiGiaoHang);
         }
     }
+
     @Override
     public int getLayout() {
         return R.layout.history_shipper;
@@ -42,12 +55,30 @@ public class HistorryShipper extends TabBaseShipperFragment {
         super.onViewCreated(view, savedInstanceState);
         setHeaderTitle(getString(R.string.tab_historyship));
         setCurrentMenu(0);
-        mListView = ( ListView )view.findViewById(R.id.history_shipper_listview);
+        buttonNhanHang = (Button) view.findViewById(R.id.button_den_nhan_hang);
+        buttonDiGiaoHang = (Button) view.findViewById(R.id.button_dang_di_giao);
+        buttonDaGiaoHang = (Button) view.findViewById(R.id.button_da_giao_hang);
+        buttonDaGiaoHang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mAdapter.setData(mDataDaGiaoHang);
+            }
+        });
+
+        buttonDiGiaoHang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mAdapter.setData(mDataDiGiaoHang);
+            }
+        });
+        mListView = (ListView) view.findViewById(R.id.history_shipper_listview);
         mAdapter = new HistoryGoShipperAdapter(getActivity(), mData);
         mListView.setAdapter(mAdapter);
         mAdapter.notifyDataSetChanged();
 
 //        showHeader();
-//        setHeaderTitle("Lịch Sử Vận Đơn");
+//        setHeaderTitle("Lịch Sử Vận Đơn")
     }
+
+
 }
