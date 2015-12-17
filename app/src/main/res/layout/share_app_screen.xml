@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/share_app_screen_view"
-        android:background="@color/colorPrimary"
+        android:background="#699cfc"
         android:paddingBottom="20dp"
         android:paddingTop="10dp">
 
@@ -98,7 +98,7 @@
         android:layout_below="@+id/share_app_screen_img2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:background="@drawable/button_background"
+        android:background="#df7a08"
         android:text="@string/share_app_screen_chiase" />
 
 

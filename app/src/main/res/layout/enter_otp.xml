@@ -17,16 +17,18 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/enter_otp_img"
         android:layout_marginTop="10dp"
+        android:background="#f3f3f3"
         android:gravity="center_horizontal"
         android:padding="20dp"
         android:text="@string/enter_otp_xac_nhan_ma_dang_ky" />
 
     <TextView
+        android:textSize="17sp"
         android:id="@+id/enter_otp_textview2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/enter_otp_textview1"
-        android:background="@color/register_screen_background_textview"
+        android:background="@color/color_white"
         android:gravity="center_horizontal"
         android:padding="20dp"
         android:text="@string/enter_otp__nhap_ma_xac_nhan" />
@@ -36,7 +38,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/enter_otp_textview2"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="3dp"
         android:background="@color/color_white"
         android:gravity="center_horizontal"
         android:orientation="vertical">
@@ -53,11 +55,12 @@
             android:background="@color/background_loading_screen" />
 
         <Button
-            android:layout_width="@dimen/enter_otp_width_view"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:background="@drawable/button_background"
-            android:text="@string/enter_otp_button_chua_co_ma" />
+            android:background="@color/color_white"
+            android:text="@string/enter_otp_button_chua_co_ma"
+            android:textColor="@color/red" />
 
     </LinearLayout>
 
@@ -67,6 +70,7 @@
         android:layout_below="@+id/enter_otp_linearlayout"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:background="@drawable/button_background"
-        android:text="@string/enter_otp_button_hoan_thanh" />
+        android:background="#E37F0D"
+        android:text="@string/enter_otp_button_hoan_thanh"
+        android:textColor="@color/color_white" />
 </RelativeLayout>

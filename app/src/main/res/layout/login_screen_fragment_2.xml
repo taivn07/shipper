@@ -19,7 +19,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageview_login_2"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/margin_login_2" />
+        android:layout_marginTop="@dimen/margin_login_2"
+        android:hint="Điện Thoại"
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/edit_text_password_login_2"
@@ -28,7 +30,9 @@
         android:layout_below="@+id/edit_text_phone_number"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/margin_login_2"
-        android:password="true" />
+        android:hint="Mật Khẩu"
+        android:password="true"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/button_dang_nhap_login_2"
@@ -37,7 +41,7 @@
         android:layout_below="@id/edit_text_password_login_2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/margin_login_2"
-        android:background="@drawable/button_background"
+        android:background="#DF7B09"
         android:text="@string/login_2_dang_nhap" />
 
     <TextView
@@ -46,29 +50,31 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/button_dang_nhap_login_2"
         android:layout_below="@+id/button_dang_nhap_login_2"
-        android:layout_margin="@dimen/login_2_margin_textview"
+        android:layout_marginTop="25dp"
         android:text="@string/login_2_quen_mat_khau"
         android:textColor="@color/colorPrimary"
-        android:textSize="@dimen/text_size_login_2" />
+        android:textSize="20sp" />
 
     <TextView
+
         android:id="@+id/text_view_dang_ky_login_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignRight="@id/button_dang_nhap_login_2"
         android:layout_below="@id/button_dang_nhap_login_2"
-        android:layout_margin="@dimen/login_2_margin_textview"
+        android:layout_marginTop="25dp"
         android:text="@string/login_2_dang_ky"
         android:textColor="@color/colorPrimary"
-        android:textSize="@dimen/text_size_login_2" />
+        android:textSize="20sp" />
 
-    <ProgressBar
-        android:id="@+id/progressBar3"
+    <ImageView
+        android:id="@+id/textview3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="@dimen/login_2_margin_progress" />
+        android:layout_marginBottom="@dimen/login_2_margin_progress"
+        android:src="@drawable/img_loading"></ImageView>
 
 
 </RelativeLayout>

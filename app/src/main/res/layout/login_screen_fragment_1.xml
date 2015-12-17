@@ -60,6 +60,7 @@
         android:textSize="@dimen/textsize_on_login_screen_fragment_1" />
 
     <TextView
+        android:padding="6dp"
         android:id="@+id/textView"
         android:layout_width="@dimen/width_dang_nhap_on_login_screen_fragment_1"
         android:layout_height="wrap_content"
@@ -71,12 +72,14 @@
         android:textSize="@dimen/textsize_on_login_screen_fragment_1"
         android:textStyle="italic" />
 
-    <ProgressBar
-        android:id="@+id/progressBar2"
+    <ImageView
+        android:src="@drawable/img_loading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
+        android:id="@+id/imageView4"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/margin_top_on_login_screen_fragment_1" />
+        android:layout_marginBottom="46dp" />
+
 
 </RelativeLayout>

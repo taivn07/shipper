@@ -9,13 +9,16 @@ import android.view.View;
 import android.widget.BaseAdapter;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import jp.shipper.app.R;
 import jp.shipper.app.fragment.FooterFragment;
 import jp.shipper.app.fragment.FooterShipperFragment;
+import jp.shipper.app.fragment.FriendInviteScreen;
 import jp.shipper.app.fragment.GuideFragment;
 import jp.shipper.app.fragment.PersonalInfoFragment;
 import jp.shipper.app.fragment.ProfileEditScreen;
+import jp.shipper.app.fragment.ShareAppScreen;
 
 /**
  * Created by PaditechPC1 on 12/11/2015.
@@ -29,6 +32,8 @@ public class TabBarShipperActivity extends BaseActivity implements View.OnClickL
 
     public static final int MENU_PERSONAL_INFO = 1;
     public static final int MENU_GUIDE = 2;
+    public static final int MENU_SHARE = 6;
+    public static final int MENU_INVITE = 5;
 
     private FooterShipperFragment mFooter = new FooterShipperFragment();
 
@@ -48,6 +53,8 @@ public class TabBarShipperActivity extends BaseActivity implements View.OnClickL
 
         findViewById(R.id.ll_guide).setOnClickListener(this);
         findViewById(R.id.ll_personal_info).setOnClickListener(this);
+        findViewById(R.id.l6_share).setOnClickListener(this);
+        findViewById(R.id.l5_invite_friend).setOnClickListener(this);
 
         showFragmentFooter(mFooter);
     }
@@ -72,6 +79,14 @@ public class TabBarShipperActivity extends BaseActivity implements View.OnClickL
                 showFragment(new GuideFragment());
                 mFooter.setCurrentTab(0);
                 break;
+            case MENU_SHARE:
+                showFragment(new ShareAppScreen());
+                mFooter.setCurrentTab(0);
+                break;
+            case MENU_INVITE:
+                showFragment(new FriendInviteScreen());
+                mFooter.setCurrentTab(0);
+                break;
         }
     }
 
@@ -81,6 +96,7 @@ public class TabBarShipperActivity extends BaseActivity implements View.OnClickL
             toggleMenu();
         } else if (R.id.ll_personal_info == view.getId()) {
             toggleMenu();
+            Toast.makeText(this, "Share", Toast.LENGTH_LONG).show();
             if(MENU_PERSONAL_INFO != mCurrentMenu){
                 mCurrentMenu = MENU_PERSONAL_INFO;
                 showMenu(mCurrentMenu);
@@ -89,6 +105,19 @@ public class TabBarShipperActivity extends BaseActivity implements View.OnClickL
             toggleMenu();
             if(MENU_GUIDE != mCurrentMenu){
                 mCurrentMenu = MENU_GUIDE;
+                showMenu(mCurrentMenu);
+            }
+        } else if( R.id.l6_share == view.getId()){
+            toggleMenu();
+            Toast.makeText(this, "Share", Toast.LENGTH_LONG).show();
+            if( MENU_SHARE != mCurrentMenu ){
+                mCurrentMenu = MENU_SHARE;
+                showMenu(mCurrentMenu);
+            }
+        }else if( R.id.l5_invite_friend == view.getId()){
+            toggleMenu();
+            if( MENU_INVITE != mCurrentMenu ){
+                mCurrentMenu = MENU_INVITE;
                 showMenu(mCurrentMenu);
             }
         }

@@ -16,13 +16,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/register_screen_img"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:background="@color/color_white"
         android:gravity="center_horizontal"
         android:orientation="vertical"
         android:weightSum="4">
 
         <TextView
+
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -39,6 +40,7 @@
             android:layout_marginTop="5dp"
             android:layout_weight="1"
             android:hint="@string/register_screen_so_dien_thoai"
+            android:padding="15dp"
             android:textSize="@dimen/register_screen_text_size" />
 
         <View
@@ -53,6 +55,7 @@
             android:layout_marginTop="5dp"
             android:layout_weight="1"
             android:hint="@string/register_screen_mat_khau"
+            android:padding="15dp"
             android:password="true"
             android:textSize="@dimen/register_screen_text_size" />
 
@@ -68,6 +71,7 @@
             android:layout_marginTop="5dp"
             android:layout_weight="1"
             android:hint="@string/register_screen_xac_nhan_mat_khau"
+            android:padding="15dp"
             android:password="true"
             android:textSize="@dimen/register_screen_text_size" />
 
@@ -75,7 +79,7 @@
 
     <Button
         android:id="@+id/register_screen_button_dangky"
-        android:layout_width="@dimen/register_screen_width_view"
+        android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/register_screen_linearlayout"
         android:layout_centerHorizontal="true"

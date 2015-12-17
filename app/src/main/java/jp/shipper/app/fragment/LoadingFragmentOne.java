@@ -3,6 +3,7 @@ package jp.shipper.app.fragment;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewTreeObserver;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -37,7 +38,7 @@ public class LoadingFragmentOne extends BaseFragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         mRelativeLayout = ( RelativeLayout) view.findViewById(R.id.rl_one);
-        mLinearLayoutOne = ( LinearLayout )view.findViewById(R.id.linear_layout_one);
+       // mLinearLayoutOne = ( LinearLayout )view.findViewById(R.id.linear_layout_one);
         mLinearLayoutTwo = ( LinearLayout )view.findViewById(R.id.linear_layout_two);
         mRelativeLayoutThree = ( RelativeLayout )view.findViewById(R.id.linear_layout_three);
         imageViewBackground = ( ImageView )view.findViewById(R.id.image_background);
@@ -63,10 +64,10 @@ public class LoadingFragmentOne extends BaseFragment {
                 showFragmentAddToBackStack(new LoginFragment());
             }
         });
-        mLinearLayoutOne.post(new Runnable() {
+        mRelativeLayout.post(new Runnable() {
             @Override
             public void run() {
-                int h = mLinearLayoutOne.getHeight();
+                int h = mRelativeLayout.getHeight();
                 imageViewBackground.setLayoutParams(new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, h));
             }
         });
@@ -80,7 +81,7 @@ public class LoadingFragmentOne extends BaseFragment {
 
 
         visibilitiOnLayoutTwo = mLinearLayoutTwo.getVisibility() == View.VISIBLE;
-        mLinearLayoutOne.setOnClickListener(new View.OnClickListener() {
+        mRelativeLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if( visibilitiOnLayoutTwo){

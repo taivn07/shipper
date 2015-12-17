@@ -13,43 +13,41 @@
         android:src="@drawable/homeship" />
 
     <RelativeLayout
+        android:layout_marginTop="10dp"
         android:id="@+id/rl_one"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/image_view_loading_fragment">
-
-
-        <LinearLayout
-            android:id="@+id/linear_layout_one"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/images_1"
-            android:gravity="center_vertical"
-            android:orientation="vertical">
-
-            <TextView
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/ship_hang"
-                android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/textsize_17" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/ship_tim_nguoi_nguoi_tim_ship"
-                android:textSize="@dimen/textsize_17" />
-
-
-        </LinearLayout>
+        android:layout_height="100dp"
+        android:layout_below="@+id/image_view_loading_fragment"
+        android:background="@drawable/images_1">
 
         <ImageView
             android:id="@+id/image_background"
             android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#99A2DEA3" />
+
+
+        <TextView
+            android:id="@+id/tv_shiphang"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#5080DEEA" />
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/ship_hang"
+            android:textColor="#6650cd"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_shiphang"
+            android:layout_marginLeft="10dp"
+            android:text="@string/ship_tim_nguoi_nguoi_tim_ship"
+            android:textColor="@color/color_white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
     </RelativeLayout>
 
     <LinearLayout
@@ -71,8 +69,7 @@
             android:layout_weight="1"
             android:background="@android:color/white"
             android:gravity="center"
-            android:paddingBottom="@dimen/padding_on_loading_fragment_one"
-            android:paddingTop="@dimen/padding_on_loading_fragment_one"
+            android:padding="20dp"
             android:text="@string/ship_tim_nguoi"
             android:textSize="@dimen/textsize_17" />
 
@@ -88,6 +85,7 @@
             android:layout_weight="1"
             android:background="@android:color/white"
             android:gravity="center"
+            android:padding="20dp"
             android:paddingBottom="@dimen/padding_on_loading_fragment_one"
             android:paddingTop="@dimen/padding_on_loading_fragment_one"
             android:text="@string/nguoi_tim_ship"
@@ -97,41 +95,51 @@
     <RelativeLayout
         android:id="@+id/linear_layout_three"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:layout_below="@+id/linear_layout_two"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/padding_on_loading_fragment_one"
         android:background="@drawable/images_2"
         android:gravity="center_vertical">
 
+        <ImageView
+            android:id="@+id/image_view_backround"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#90A2DEA3" />
+
         <TextView
             android:id="@+id/textviewShipHang"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
             android:text="@string/ship_qua_vat"
-            android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/textsize_17" />
+            android:textColor="#6650cd"
+            android:textSize="25sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/textviewShipHang"
+            android:layout_marginLeft="10dp"
             android:gravity="center_vertical"
             android:text="@string/the_gioi_qua_vat"
-            android:textSize="@dimen/textsize_17" />
+            android:textColor="@color/color_white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-        <ImageView
-            android:id="@+id/image_view_backround"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:background="#5080DEEA" />
+
     </RelativeLayout>
 
-    <ProgressBar
+    <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/linear_layout_three"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/margin_progress_bar_on_loading_fragment_one" />
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/img_loading" />
+
 
 </RelativeLayout>
