@@ -1,10 +1,13 @@
 package jp.shipper.app.fragment;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
+import android.widget.EditText;
 
 import jp.shipper.app.R;
 
@@ -33,11 +36,12 @@ public class CreateShipFragment extends TabBaseFragment implements View.OnClickL
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
+//        EditText editText=(EditText)mRootView.findViewById(R.id.txtMsg);
         mRootView.findViewById(R.id.btnTaoDon).setOnClickListener(this);
         mRootView.findViewById(R.id.btnAddAndress).setOnClickListener(this);
         setHeaderTitle(getString(R.string.tab_create));
         setCurrentMenu(0);
+
     }
 
     @Override
@@ -52,4 +56,5 @@ public class CreateShipFragment extends TabBaseFragment implements View.OnClickL
 
         }
     }
+
 }

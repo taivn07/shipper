@@ -2,6 +2,7 @@ package jp.shipper.app.fragment;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 
 import jp.shipper.app.R;
 
@@ -27,7 +28,7 @@ public class FooterFragment extends TabBaseFragment implements View.OnClickListe
         mRootView.findViewById(R.id.ll_history).setOnClickListener(this);
         mRootView.findViewById(R.id.ll_notification).setOnClickListener(this);
         mRootView.findViewById(R.id.ll_map).setOnClickListener(this);
-
+        getActivity().getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
         Bundle bundle=getArguments();
         String fragmenthistory = bundle.getString("message");
         int currenTab = TAB_CREATE;

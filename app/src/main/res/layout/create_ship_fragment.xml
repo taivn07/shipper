@@ -3,14 +3,17 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:fillViewport="false"
-    android:background="#FFE4E1">
+    android:background="#FFE4E1"
+    android:clickable="true"
+    android:focusableInTouchMode="true">
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:background="#FFE4E1"
         android:gravity="center_vertical"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        >
 
         <LinearLayout
             android:layout_width="fill_parent"
