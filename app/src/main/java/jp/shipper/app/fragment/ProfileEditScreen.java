@@ -37,6 +37,6 @@ public class ProfileEditScreen extends NaviBaseFragment {
         spinnerDistrict.setAdapter(adapterDistrict);
         spinnerCity.setAdapter(adapterCity);
 //        showHeader();
-        setHeaderTitle("Thông Tin Cá Nhân");
+        //setHeaderTitle("Thông Tin Cá Nhân");
     }
 }

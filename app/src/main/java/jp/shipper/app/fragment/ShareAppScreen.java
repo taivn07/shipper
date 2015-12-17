@@ -24,6 +24,6 @@ public class ShareAppScreen extends NaviBaseFragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        setHeaderTitle("Chia Sẻ Ứng Dụng");
+        //setHeaderTitle("Chia Sẻ Ứng Dụng");
     }
 }

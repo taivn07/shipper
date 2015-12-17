@@ -22,6 +22,6 @@ public class FriendInviteScreen extends NaviBaseFragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        setHeaderTitle("Mời Kết Bạn");
+        //setHeaderTitle("Mời Kết Bạn");
     }
 }

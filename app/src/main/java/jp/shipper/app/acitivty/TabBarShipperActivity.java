@@ -76,18 +76,22 @@ public class TabBarShipperActivity extends BaseActivity implements View.OnClickL
             case MENU_PERSONAL_INFO:
                 showFragment(new ProfileEditScreen());
                 mFooter.setCurrentTab(0);
+                setHeaderTitle("Thông Tin Cá Nhân");
                 break;
             case MENU_GUIDE:
                 showFragment(new GuideFragment());
+                setHeaderTitle("Hướng Dẫn");
                 mFooter.setCurrentTab(0);
                 break;
             case MENU_SHARE:
                 showFragment(new ShareAppScreen());
                 mFooter.setCurrentTab(0);
+                setHeaderTitle("Chia Sẻ Ứng Dụng");
                 break;
             case MENU_INVITE:
                 showFragment(new FriendInviteScreen());
                 mFooter.setCurrentTab(0);
+                setHeaderTitle("Mời Bạn Bè");
                 break;
         }
     }
