@@ -19,6 +19,6 @@ public class GuideFragment extends NaviBaseFragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        setHeaderTitle("Guide");
+        //setHeaderTitle("Guide");
     }
 }

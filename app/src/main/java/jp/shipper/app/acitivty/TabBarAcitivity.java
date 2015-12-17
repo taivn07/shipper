@@ -76,6 +76,7 @@ public class TabBarAcitivity extends BaseActivity implements View.OnClickListene
         switch (index) {
             case MENU_PERSONAL_INFO:
                 showFragment(new ProfileEditScreen());
+                setHeaderTitle("Thông Tin Cá Nhân");
                 mFooter.setCurrentTab(0);
                 break;
             case MENU_GUIDE:

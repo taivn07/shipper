@@ -1,5 +1,6 @@
 package jp.shipper.app.fragment;
 
+import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -52,12 +53,23 @@ public class RegisterScreen extends BaseFragment {
                     Toast.makeText(getActivity(), "Bạn Phải Điền Đầy Đủ Thông Tin", Toast.LENGTH_LONG).show();
                     return;
                 }else{
-
+                    hideKeyboard(getActivity());
                     showFragmentAddToBackStack(new EnterOTP());
 
                 }
             }
         });
         setHeaderTitle("Đăng Ký");
+    }
+
+    public static void hideKeyboard(Context ctx) {
+        InputMethodManager inputManager = (InputMethodManager) ctx
+                .getSystemService(Context.INPUT_METHOD_SERVICE);
+
+        View v = ((Activity) ctx).getCurrentFocus();
+        if (v == null)
+            return;
+
+        inputManager.hideSoftInputFromWindow(v.getWindowToken(), 0);
     }
 }
