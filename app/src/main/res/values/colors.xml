@@ -23,6 +23,7 @@
     <item name="darkorange" type="color">#FFFF8800</item>
     <item name="darkred" type="color">#FFCC0000</item>
     <item name="OrangeRed1" type="color">#FF4500</item>
+    <item name="blue_screen_item" type="color">#C6E2FF</item>
 
     <!--ChatActivity Color-->
     <color name="toolbar_background">@android:color/white</color>
@@ -31,4 +32,5 @@
     <color name="btn_send_text_color_clicked">#990022ff</color>
 
     <color name="history_shipper_grey"> #ECEFF1 </color>
+
 </resources>

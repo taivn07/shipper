@@ -3,6 +3,7 @@ package jp.shipper.app.view.adapter;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -15,6 +16,7 @@ import android.widget.ViewFlipper;
 import java.util.ArrayList;
 
 import jp.shipper.app.R;
+import jp.shipper.app.acitivty.ChatActivity;
 import jp.shipper.app.view.item.HistoryItem;
 import jp.shipper.app.view.item.YeuCauMoiItem;
 
@@ -69,27 +71,54 @@ public class YeuCauMoiAdapter extends BaseAdapter {
         switch (type) {
             case LIST_ITEM_TYPE_1:
                 holder.viewFlipper.setDisplayedChild(0);
+                // process receiver ship
                 Button btnnhanship=(Button) convertView.findViewById(R.id.btnnhanship);
                 btnnhanship.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                        int a=1;
+                        if(a==1){
+                            AlertDialog.Builder builder = new AlertDialog.Builder(context);
 //                                    // Get the layout inflater
-                        LayoutInflater inflater = LayoutInflater.from(context);;
+                            LayoutInflater inflater = LayoutInflater.from(context);;
 
-                        builder.setView(inflater.inflate(R.layout.dialog_receiver_shipper, null))
-                                // Add action buttons
-                                .setPositiveButton(R.string.OK, new DialogInterface.OnClickListener() {
-                                    @Override
-                                    public void onClick(DialogInterface dialog, int id) {
+                            builder.setView(inflater.inflate(R.layout.dialog_receiver_shipper, null))
+                                    // Add action buttons
+                                    .setPositiveButton(R.string.OK, new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface dialog, int id) {
 
-                                    }
-                                })
-                                .setNegativeButton(R.string.Cancel, new DialogInterface.OnClickListener() {
-                                    public void onClick(DialogInterface dialog, int id) {
+                                        }
+                                    })
+                                    .setNegativeButton(R.string.Cancel, new DialogInterface.OnClickListener() {
+                                        public void onClick(DialogInterface dialog, int id) {
 
-                                    }
-                                }).show();
+                                        }
+                                    }).show();
+                        } else if (a==0){
+                            AlertDialog.Builder builder_cancel = new AlertDialog.Builder(context);
+//                                    // Get the layout inflater
+                            LayoutInflater inflater_cancel = LayoutInflater.from(context);;
+
+                            builder_cancel.setView(inflater_cancel.inflate(R.layout.dialog_reject_shipper, null))
+                                    // Add action buttons
+                                    .setPositiveButton(R.string.OK, new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface dialog, int id) {
+
+                                        }
+                                    }).show();
+                        }
+
+                    }
+                });
+                // process chat in "yeu cau moi"
+                Button btn_chat_yeucaumoi = (Button) convertView.findViewById(R.id.btn_chat_yeucaumoi);
+                btn_chat_yeucaumoi.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent myIntent = new Intent(context, ChatActivity.class);
+                        context.startActivity(myIntent);
                     }
                 });
                 break;

@@ -11,22 +11,47 @@
         android:layout_height="150dp"
         android:background="@drawable/edge_listview_timship">
 
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="150dp"
-            android:layout_weight="2.5"
-            android:background="@color/register_screen_background_textview"
+        <RelativeLayout
+            android:id="@+id/history_shipper_relativelayout1"
+            android:layout_width="100dp"
+            android:layout_height="150dp">
 
-            android:drawableLeft="@drawable/ic"
-            android:gravity="center"
-            android:text="date"
-            android:textSize="16dip"/>
+            <ImageView
+                android:id="@+id/history_shipper_img_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dagiaohang" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true">
+
+
+                <ImageView
+                    android:id="@+id/history_shipper_img_shop"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_above="@+id/item_history_shipper_nameshop"
+                    android:src="@drawable/ic_people" />
+
+                <TextView
+                    android:id="@+id/item_history_shipper_nameshop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="NameShipper"
+                    android:paddingBottom="10dp"/>
+            </RelativeLayout>
+        </RelativeLayout>
 
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="150dp"
             android:layout_weight="1"
-            android:background="@color/orange">
+            android:background="@color/orange"
+            android:layout_marginLeft="10dp">
 
             <RelativeLayout
                 android:layout_width="fill_parent"
@@ -37,7 +62,7 @@
                     android:layout_width="fill_parent"
                     android:gravity="bottom"
                     android:layout_height="40dp"
-                    android:background="@color/register_screen_background_textview"
+                    android:background="@color/blue_screen_item"
                     android:textColor="@color/red"
                     android:text="time"
                     />
@@ -48,16 +73,16 @@
                     android:layout_height="80dp"
                     android:layout_below="@id/date"
                     android:textColor="@color/blue"
-                    android:background="@color/register_screen_background_textview"
-                    android:text="cần người giao quần áo đi Xuân Thủy"/>
+                    android:background="@color/blue_screen_item"
+                    android:text="cần người giao quần áo đi Xuân Thủy\n Tiền hàng\n Phí ship"/>
 
                 <TextView
                     android:id="@+id/trangthaiship"
                     android:layout_width="fill_parent"
                     android:layout_height="30dp"
                     android:layout_below="@id/cannguoi"
-                    android:background="@color/register_screen_background_textview"
-                    android:text="Có 10 shipper đã nhận được tin này"
+                    android:background="@color/blue_screen_item"
+                    android:text="Đơn hàng này được giao thành công hãy đánh giá shipper này"
                     android:textColor="@color/red"
                     android:gravity="bottom"/>
             </RelativeLayout>
@@ -81,7 +106,7 @@
             android:textColor="@color/wallet_primary_text_holo_light"/>
 
         <Button
-            android:id="@+id/chat"
+            android:id="@+id/btn_chat_dagiaohang"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"

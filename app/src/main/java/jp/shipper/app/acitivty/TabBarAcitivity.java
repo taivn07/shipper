@@ -7,6 +7,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.PopupWindow;
 import android.widget.TextView;
 
 import jp.shipper.app.R;
@@ -25,7 +26,6 @@ public class TabBarAcitivity extends BaseActivity implements View.OnClickListene
 
     public static final int MENU_PERSONAL_INFO = 1;
     public static final int MENU_GUIDE = 2;
-
     private FooterFragment mFooter = new FooterFragment();
 
     @Override
