@@ -1,22 +1,33 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@color/blue_screen_item">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/color_white"
+        android:background="@color/blue_screen_item"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="Bạn muốn nhận đơn này\r\n Đây là đơn hàng nhận phí ship từ chương trình khuyến mại"/>
+        android:text="Bạn muốn nhận đơn này"
+        android:textSize="18dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_screen_item"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Đây là đơn hàng nhận phí ship từ chương trình khuyến mại"/>
     <EditText
         android:id="@+id/username"
-        android:inputType="textEmailAddress"
+        android:inputType="text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="4dp"
-        android:hint="..." />
+        android:background="@drawable/color_edge_background"
+        android:hint="..."
+        android:padding="5dp"/>
 </LinearLayout>

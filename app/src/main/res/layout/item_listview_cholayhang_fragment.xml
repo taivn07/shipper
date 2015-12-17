@@ -49,37 +49,56 @@
             android:layout_width="fill_parent"
             android:layout_height="150dp"
             android:layout_weight="1"
-            android:background="@color/orange">
+            android:background="#C6E2FF"
+            android:layout_marginLeft="10dp">
 
             <RelativeLayout
                 android:layout_width="fill_parent"
-                android:layout_height="150dp">
+                android:layout_height="150dp"
+                android:background="#C6E2FF">
 
                 <TextView
                     android:id="@+id/date"
                     android:layout_width="fill_parent"
                     android:gravity="bottom"
                     android:layout_height="40dp"
-                    android:background="@color/register_screen_background_textview"
+                    android:background="@color/blue_screen_item"
                     android:textColor="@color/red"
-                    android:text="time"
+                    android:text="30/07/2015 15:30"
                     />
 
                 <TextView
                     android:id="@+id/cannguoi"
                     android:layout_width="fill_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="30dp"
                     android:layout_below="@id/date"
+                    android:background="@color/blue_screen_item"
+                    android:text="cần người giao quần áo đi Xuân Thủy"
+                    android:textColor="@color/blue" />
+                <TextView
+                    android:id="@+id/txtphi"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/cannguoi"
+                    android:background="@color/blue_screen_item"
+                    android:text="Tiền hàng:300k phí ship 20k"
+                    android:textColor="@color/blue" />
+                <TextView
+                    android:id="@+id/txtbaolanh"
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/txtphi"
+                    android:background="@color/blue_screen_item"
+                    android:text=""
                     android:textColor="@color/blue"
-                    android:background="@color/register_screen_background_textview"
-                    android:text="cần người giao quần áo đi Xuân Thủy"/>
+                    />
 
                 <TextView
                     android:id="@+id/trangthaiship"
                     android:layout_width="fill_parent"
                     android:layout_height="30dp"
-                    android:layout_below="@id/cannguoi"
-                    android:background="@color/register_screen_background_textview"
+                    android:layout_below="@id/txtbaolanh"
+                    android:background="@color/blue_screen_item"
                     android:text="Có 10 shipper đã nhận được tin này"
                     android:textColor="@color/red"
                     android:gravity="bottom"/>
