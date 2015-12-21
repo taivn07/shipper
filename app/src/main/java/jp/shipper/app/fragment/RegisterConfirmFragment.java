@@ -8,10 +8,10 @@ import jp.shipper.app.R;
 /**
  * Created by QuyTrongNguyen on 08/12/2015.
  */
-public class FriendInviteScreen extends NaviBaseFragment {
+public class RegisterConfirmFragment extends BaseFragment {
     @Override
     public int getLayout() {
-        return R.layout.friend_invite_screen;
+        return R.layout.fragment_register_confirm;
     }
 
     @Override
@@ -22,6 +22,7 @@ public class FriendInviteScreen extends NaviBaseFragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        //setHeaderTitle("Mời Kết Bạn");
+        showHeader();
+        setHeaderTitle("Đăng Ký");
     }
 }

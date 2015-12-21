@@ -8,27 +8,27 @@ import java.util.ArrayList;
 
 import jp.shipper.app.R;
 import jp.shipper.app.view.adapter.ShipperNotificationAdapter;
-import jp.shipper.app.view.item.ShipperNotificationItem;
+import jp.shipper.app.view.item.ShipperNotificationObject;
 
 /**
  * Created by QuyTrongNguyen on 10/12/2015.
  */
 public class ShipperNotification extends TabBaseShipperFragment {
     private ListView mListView;
-    private ArrayList<ShipperNotificationItem> mData;
+    private ArrayList<ShipperNotificationObject> mData;
     private ShipperNotificationAdapter mAdapter;
 
     @Override
     public int getLayout() {
-        return R.layout.shipper_notification;
+        return R.layout.fragment_shipper_notification;
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mData = new ArrayList<ShipperNotificationItem>();
+        mData = new ArrayList<ShipperNotificationObject>();
         for( int i = 0; i < 6; i ++ ){
-            ShipperNotificationItem item = new ShipperNotificationItem("content content content content content content content content content content " + i, i, "Date " + i );
+            ShipperNotificationObject item = new ShipperNotificationObject("content content content content content content content content content content " + i, i, "Date " + i );
             mData.add(item);
         }
     }

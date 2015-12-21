@@ -8,8 +8,8 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import jp.shipper.app.R;
-import jp.shipper.app.fragment.LoadingFragment;
-import jp.shipper.app.fragment.LoadingFragmentOne;
+import jp.shipper.app.fragment.LoadingScreenOneFragment;
+import jp.shipper.app.fragment.LoadingScreenTwoFragment;
 
 /**
  * Created by PaditechPC1 on 12/11/2015.
@@ -23,12 +23,12 @@ public class MainShipperActivity extends BaseShipperActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
 
-        showFragment(new LoadingFragment());
+        showFragment(new LoadingScreenOneFragment());
 
         mTimerTask = new TimerTask() {
             @Override
             public void run() {
-                showFragment(new LoadingFragmentOne());
+                showFragment(new LoadingScreenTwoFragment());
             }
         };
 

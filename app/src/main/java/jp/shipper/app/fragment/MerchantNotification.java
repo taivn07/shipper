@@ -8,16 +8,14 @@ import java.util.ArrayList;
 
 import jp.shipper.app.R;
 import jp.shipper.app.view.adapter.MerchantNotificationAdapter;
-import jp.shipper.app.view.adapter.ShipperNotificationAdapter;
-import jp.shipper.app.view.item.MerchantNotificationItem;
-import jp.shipper.app.view.item.ShipperNotificationItem;
+import jp.shipper.app.view.item.MerchantNotificationObject;
 
 /**
  * Created by QuyTrongNguyen on 10/12/2015.
  */
 public class MerchantNotification extends TabBaseFragment {
     private ListView mListView;
-    private ArrayList<MerchantNotificationItem> mData;
+    private ArrayList<MerchantNotificationObject> mData;
     private MerchantNotificationAdapter mAdapter;
     @Override
     public int getLayout() {
@@ -28,9 +26,9 @@ public class MerchantNotification extends TabBaseFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mData = new ArrayList<MerchantNotificationItem>();
+        mData = new ArrayList<MerchantNotificationObject>();
         for( int i = 0; i < 6; i ++ ){
-            MerchantNotificationItem item = new MerchantNotificationItem("content content content content content content content content content content " + i, i, "Date " + i );
+            MerchantNotificationObject item = new MerchantNotificationObject("content content content content content content content content content content " + i, i, "Date " + i );
             mData.add(item);
         }
     }

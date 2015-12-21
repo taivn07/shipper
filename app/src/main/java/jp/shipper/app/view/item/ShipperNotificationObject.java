@@ -3,13 +3,13 @@ package jp.shipper.app.view.item;
 /**
  * Created by QuyTrongNguyen on 10/12/2015.
  */
-public class ShipperNotificationItem {
+public class ShipperNotificationObject {
     private String content;
     private int contentType;
     private String date;
 
 
-    public ShipperNotificationItem(String content, int contentType, String date ){
+    public ShipperNotificationObject(String content, int contentType, String date){
         this.content = content;
         this.contentType = contentType;
         this.date = date;

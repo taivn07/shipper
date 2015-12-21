@@ -7,14 +7,12 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.PopupWindow;
 import android.widget.TextView;
 
 import jp.shipper.app.R;
 import jp.shipper.app.fragment.FooterFragment;
 import jp.shipper.app.fragment.GuideFragment;
-import jp.shipper.app.fragment.PersonalInfoFragment;
-import jp.shipper.app.fragment.ProfileEditScreen;
+import jp.shipper.app.fragment.ProfileEditScreenFragment;
 
 public class TabBarAcitivity extends BaseActivity implements View.OnClickListener {
 
@@ -52,20 +50,19 @@ public class TabBarAcitivity extends BaseActivity implements View.OnClickListene
 //        showFragment(new MerchantNotification());
     }
 
-    public void showFragmentFooter(Fragment fragment){
+    public void showFragmentFooter(Fragment fragment) {
         FragmentManager fm = getFragmentManager();
         fm.beginTransaction().replace(R.id.frame_footer, fragment)
                 .commit();
     }
 
-    public void showFooter(){
+    public void showFooter() {
         findViewById(R.id.frame_footer).setVisibility(View.VISIBLE);
     }
 
-    public void hideFooter(){
+    public void hideFooter() {
         findViewById(R.id.frame_footer).setVisibility(View.GONE);
     }
-
 
 
     public void setCurrentMenu(int currentMenu) {
@@ -75,7 +72,7 @@ public class TabBarAcitivity extends BaseActivity implements View.OnClickListene
     public void showMenu(int index) {
         switch (index) {
             case MENU_PERSONAL_INFO:
-                showFragment(new ProfileEditScreen());
+                showFragment(new ProfileEditScreenFragment());
                 setHeaderTitle("Thông Tin Cá Nhân");
                 mFooter.setCurrentTab(0);
                 break;
@@ -92,18 +89,18 @@ public class TabBarAcitivity extends BaseActivity implements View.OnClickListene
             toggleMenu();
         } else if (R.id.ll_personal_info == view.getId()) {
             toggleMenu();
-            if(MENU_PERSONAL_INFO != mCurrentMenu){
+            if (MENU_PERSONAL_INFO != mCurrentMenu) {
                 mCurrentMenu = MENU_PERSONAL_INFO;
                 showMenu(mCurrentMenu);
             }
         } else if (R.id.ll_guide == view.getId()) {
             toggleMenu();
-            if(MENU_GUIDE != mCurrentMenu){
+            if (MENU_GUIDE != mCurrentMenu) {
                 mCurrentMenu = MENU_GUIDE;
                 showMenu(mCurrentMenu);
             }
         }
-        }
+    }
 
     private void toggleMenu() {
         if (mDrawerLayout.isDrawerOpen(mLeftDrawer)) {

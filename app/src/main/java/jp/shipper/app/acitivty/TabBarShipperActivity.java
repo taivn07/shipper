@@ -17,10 +17,10 @@ import android.widget.Toast;
 
 import jp.shipper.app.R;
 import jp.shipper.app.fragment.FooterShipperFragment;
-import jp.shipper.app.fragment.FriendInviteScreen;
+import jp.shipper.app.fragment.FriendInviteScreenFragment;
 import jp.shipper.app.fragment.GuideFragment;
-import jp.shipper.app.fragment.ProfileEditScreen;
-import jp.shipper.app.fragment.ShareAppScreen;
+import jp.shipper.app.fragment.ProfileEditScreenFragment;
+import jp.shipper.app.fragment.ShareAppScreenFragment;
 
 /**
  * Created by PaditechPC1 on 12/11/2015.
@@ -74,7 +74,7 @@ public class TabBarShipperActivity extends BaseActivity implements View.OnClickL
     public void showMenu(int index) {
         switch (index) {
             case MENU_PERSONAL_INFO:
-                showFragment(new ProfileEditScreen());
+                showFragment(new ProfileEditScreenFragment());
                 mFooter.setCurrentTab(0);
                 setHeaderTitle("Thông Tin Cá Nhân");
                 break;
@@ -84,12 +84,12 @@ public class TabBarShipperActivity extends BaseActivity implements View.OnClickL
                 mFooter.setCurrentTab(0);
                 break;
             case MENU_SHARE:
-                showFragment(new ShareAppScreen());
+                showFragment(new ShareAppScreenFragment());
                 mFooter.setCurrentTab(0);
                 setHeaderTitle("Chia Sẻ Ứng Dụng");
                 break;
             case MENU_INVITE:
-                showFragment(new FriendInviteScreen());
+                showFragment(new FriendInviteScreenFragment());
                 mFooter.setCurrentTab(0);
                 setHeaderTitle("Mời Bạn Bè");
                 break;

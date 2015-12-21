@@ -11,18 +11,18 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import jp.shipper.app.R;
-import jp.shipper.app.view.item.ShipperNotificationItem;
+import jp.shipper.app.view.item.ShipperNotificationObject;
 
 /**
  * Created by QuyTrongNguyen on 10/12/2015.
  */
 public class ShipperNotificationAdapter extends BaseAdapter {
     private Context mContext;
-    private ArrayList<ShipperNotificationItem> mData;
+    private ArrayList<ShipperNotificationObject> mData;
     ViewHolder holder;
 
 
-    public ShipperNotificationAdapter(Context mContext, ArrayList<ShipperNotificationItem> mData) {
+    public ShipperNotificationAdapter(Context mContext, ArrayList<ShipperNotificationObject> mData) {
         super();
         this.mContext = mContext;
         this.mData = mData;
@@ -34,7 +34,7 @@ public class ShipperNotificationAdapter extends BaseAdapter {
     }
 
     @Override
-    public ShipperNotificationItem getItem(int position) {
+    public ShipperNotificationObject getItem(int position) {
         return mData.get(position);
     }
 
@@ -48,7 +48,7 @@ public class ShipperNotificationAdapter extends BaseAdapter {
         if (convertView == null) {
 
             LayoutInflater vi = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = vi.inflate(R.layout.item_listview_shipper_notification, null);
+            convertView = vi.inflate(R.layout.item_shipper_notification, null);
             holder = new ViewHolder();
             holder.mImageViewHS = (ImageView) convertView.findViewById(R.id.item_shipper_notification_img_HS);
             holder.mTextViewContent = (TextView) convertView.findViewById(R.id.shipper_notification_tv_content);
@@ -60,7 +60,7 @@ public class ShipperNotificationAdapter extends BaseAdapter {
             holder = (ViewHolder) convertView.getTag();
         }
 
-        ShipperNotificationItem mItem = mData.get(position);
+        ShipperNotificationObject mItem = mData.get(position);
         if (mItem != null) {
             holder.mImageViewHS.setImageResource(R.drawable.ic_homeship);
             holder.mTextViewContent.setText(mItem.getContent());

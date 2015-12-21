@@ -6,14 +6,15 @@ import android.widget.Button;
 
 import jp.shipper.app.R;
 
-public class LoginFragment extends BaseFragment {
-    //luu trang thai dang nhap lan dau hoac lan thu 2:
+public class LoginScreenFragment extends BaseFragment {
 
-    private Button mButtonLoginFacebook, mButtonLoginShipper;
+
+    private Button mButtonLoginFacebook;
+    private Button mButtonLoginShipper;
 
     @Override
     public int getLayout() {
-        return R.layout.login_fragment;
+        return R.layout.fragment_login_screen;
     }
 
     @Override
@@ -24,17 +25,22 @@ public class LoginFragment extends BaseFragment {
 
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        mButtonLoginFacebook = ( Button )view.findViewById(R.id.buttonLoginFacebook);
-        mButtonLoginShipper = ( Button )view.findViewById(R.id.buttonLoginShipper);
+        init();
+        showHeader();
+        setHeaderTitle("Đăng Nhập");
+    }
+
+    private void init() {
+        View view = getView();
+        mButtonLoginFacebook = (Button) view.findViewById(R.id.buttonLoginFacebook);
+        mButtonLoginShipper = (Button) view.findViewById(R.id.buttonLoginShipper);
         mButtonLoginShipper.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showFragmentAddToBackStack(new LoginScreenFragment2());
+                showFragmentAddToBackStack(new LoginScreenTwoFragment());
 
             }
         });
 
-        showHeader();
-        setHeaderTitle("đăng nhập");
     }
 }

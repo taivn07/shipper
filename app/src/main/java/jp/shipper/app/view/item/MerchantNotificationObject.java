@@ -3,13 +3,13 @@ package jp.shipper.app.view.item;
 /**
  * Created by QuyTrongNguyen on 10/12/2015.
  */
-public class MerchantNotificationItem {
+public class MerchantNotificationObject {
     private String content;
     private int contentType;
     private String date;
 
 
-    public MerchantNotificationItem(String content, int contentType, String date ){
+    public MerchantNotificationObject(String content, int contentType, String date){
         this.content = content;
         this.contentType = contentType;
         this.date = date;

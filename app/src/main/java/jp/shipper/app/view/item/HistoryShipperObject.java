@@ -3,7 +3,7 @@ package jp.shipper.app.view.item;
 /**
  * Created by QuyTrongNguyen on 13/12/2015.
  */
-public class HistoryGoShipperItem {
+public class HistoryShipperObject {
     private int status;
     private String nameShop;
     private int shopID;
@@ -19,7 +19,7 @@ public class HistoryGoShipperItem {
     private String khoangCach;
     private String date;
 
-    public HistoryGoShipperItem(int status, String nameShop, int shopID, int shipperID, String addressOfReceiver, String addressOfSender, int thuHo, int phiShip, String yeuCau, String khoangCach, String date){
+    public HistoryShipperObject(int status, String nameShop, int shopID, int shipperID, String addressOfReceiver, String addressOfSender, int thuHo, int phiShip, String yeuCau, String khoangCach, String date){
         this.status = status;
         this.nameShop = nameShop;
         this.shopID = shopID;
